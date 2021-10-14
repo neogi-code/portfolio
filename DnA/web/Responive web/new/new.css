@@ -1,0 +1,80 @@
+@charset "utf-8";
+/**** 필터 ****/
+.locate {
+	width: 100vw;
+	max-width: 1440px;
+	height: 6rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.locate p {
+	font-size: 2.25rem;
+	position: absolute;
+	left: 50%; top: 15%;
+	transform: translateX(-50%);
+}
+.locate .array {
+	width: 18.125rem;
+	display: flex;
+	align-items: center;
+	font-size: 0.75rem;
+	text-align: center;
+}
+.locate #array {
+	display: none;
+}
+.locate .array li {
+	width: 20%;
+	color: #aaa;
+	border-right: 1px solid #aaa;
+}
+
+/**** 컨텐츠 ****/
+.contentwrap {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.product {
+	width: 45%;
+	margin-bottom: 4rem;
+}
+.product span {
+	display: block;
+}
+.product .title {
+	font-weight: 700;
+	margin: 15px 0;
+}
+/**** 상품페이지 목록 ****/
+.list {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.list li {
+	width: 20px;
+	height: 20px;
+}
+.list li:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+	.content {
+		padding-top: 90px;
+		text-align: center;
+	}
+	.locate .array {
+		display: none;
+	}
+	.locate #array {
+		display: block;
+		height: 30%;
+		margin-right: 3%;
+	}
+}

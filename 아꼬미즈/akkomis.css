@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+main span {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+main img {
+    max-width: 800px;
+}
+main p {
+    max-width: 600px;
+    margin: 3rem 0;
+}
+header.fixed .wrap {
+    color: #222;
+}

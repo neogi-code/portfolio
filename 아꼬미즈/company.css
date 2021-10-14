@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+body {
+    background-color: #ea5a59;
+}
+header.fixed .wrap {
+    color: #222;
+}
+h3 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-weight: normal;
+}
+section > p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.grid {
+    width: 90%;
+    max-width: 1024px;
+    margin: 4% auto 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10%;
+}
+.design {
+    background-image: url(images/pew.png);
+}
+.illust {
+    background-image: url(images/chacha.png);
+}
+.video {
+    background-image: url(images/hari.png);
+}
+.web {
+    background-image: url(images/shasha.png);
+}
+.gridItem {
+    padding-bottom: 300px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}

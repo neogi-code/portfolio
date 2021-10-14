@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* 초기화 값 */
+h1,h2,h3,h4,p {
+    margin: 0;
+}
+ul {
+    padding: 0; margin: 0;
+    list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+a:focus,
+button:focus
+div:focus {
+outline: none;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #fafafa;
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+/* 헤더 */
+
+header {
+    width: 1024px;
+    height: 69px;
+    background: url(images/header.png) no-repeat 0 0, #fafafa;
+    background-size: contain;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+header h1 {
+    width: 287px;
+    height: 54px;
+    text-indent: -9999px;
+    position: absolute;
+    left: 112px; top: 10px;
+}
+header #gnb {
+    width: 512px;
+    height: 59px;
+    display: flex;
+    margin-right: 39px;
+}
+header #gnb > li {
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    color: #707070;
+    line-height: 59px;
+    font-family: 'roboto',sans-serif;
+    font-weight: 500;
+}
+header #gnb > li:after {
+    content: "";
+    width: 2px;
+    height: 14px;
+    position: absolute;
+    background-color: #707070;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+}
+header #gnb > li:last-of-type:after {
+    content: none;
+}
+header #gnb > li:first-of-type {
+    width: 108px;
+}
+header #gnb > li:nth-of-type(2) {
+    width: 117px;
+}
+header #gnb > li:nth-of-type(3) {
+    width: 113px;
+}
+ header #gnb > li:nth-of-type(4) {
+     width: 146px;
+}
+
+/* 컨텐츠 */
+
+section > * {
+    margin: 0 auto;
+}
+.gridBox {
+    width: 800px;
+}

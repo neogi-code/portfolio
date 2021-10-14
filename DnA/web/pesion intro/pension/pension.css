@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 인삿말페이지 컨텐츠 */
+
+.content {
+    text-align: left;
+}
+.content .cover {
+	height: 800px;
+}
+.content .cover .txt {
+    font-size: 24px;
+    padding: 10px 0 30px;
+}
+.content .cover .flex img {
+    width: 41.66666667%;
+}
+.content .cover .sideTxt {
+    padding: 15px 30px 0;
+    color: #777;
+}
+.content .cover .color {
+    color: #8a6d3b;
+}
+.content .cover .bigFont {
+    font-size: 18px;
+}
+.content .box p {
+    margin-bottom: 15px;
+}
+
+/* 오시는길 */
+
+.content .trafic .guide {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+}
+.content .flex iframe {
+    width: 66.6667%;
+}
+.content .flex table {
+    height: 100%;
+    padding: 10px;
+    border: 1px solid rgb(240, 240, 240);
+}
+.content .flex table td {
+    padding-left: 10px;
+}
+.content tr:nth-last-of-type(even) {
+    background-color: #000;
+    color: #fff;
+}
+.content .flex > div {
+    padding: 0 15px;
+}
+@media screen and (max-width:515px) {
+    .content .cover .txt {
+        font-size: 16px;
+    }
+    .commonBanner .txt span {
+        font-size: 16px;
+    }
+    .content .cover .flex {
+        flex-direction: column;
+    }
+    .content .cover .flex img {
+        width: 100%;
+    }
+    .content .cover .sideTxt {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .content .flex iframe {
+        width: 100%;
+    }
+    .content .flex > div {
+        width: 100%;
+        padding: 0;
+        margin-top: 15px;
+    }
+}

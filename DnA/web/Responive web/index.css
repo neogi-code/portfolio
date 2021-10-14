@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/**** 컨텐츠 ****/
+.banner {
+	width: 100vw;
+	max-width: 1440px;
+	height: 100vh;
+	max-height: 812px;
+	background: url(images/banner_1.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	text-align: center;
+}
+.banner .bgc {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,.4);
+	color: #fff;
+}
+.banner .btn {
+	width: 256px;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	background-color: #000;
+}
+.banner #view {
+	margin: 20px;
+}
+.banner .btnAscloitem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banner .collab {
+	width: 350px;
+	font-size: 50px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner #logocol {
+	width: 170px;
+}
+.banner #ksbcol {
+	width: 115px;
+}
+.banner p {
+	line-height: 1.6;
+}
+/**** 상품 ****/
+.product {
+	width: 100vw;
+	max-width: 1440px;
+	height: 900px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+.product span {
+	display: block;
+	line-height: 1.2;
+}
+.product span:first-of-type {
+	font-size: 20px;
+	font-weight: bold;
+}
+.product span:nth-of-type(2){
+	font-weight: lighter;
+	color: #333;
+}
+.product img {
+	width: 450px;
+	height: 600px;
+}
+.product a:nth-of-type(odd) img{
+	margin-bottom: 15px;
+}
+.product a:nth-of-type(even) img{
+	margin-top: 15px;
+}
+
+/**** 추천 상품 ****/
+
+.recommended {
+	height: 812px;
+}
+.recommended > div {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+.recommended > .left {
+	background: url(images/recommend_1.jpg);
+	background-size: cover;
+}
+.recommended > .right {
+	background-color: #f8f8f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.denim h3{
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: 700;
+	border-bottom: 3px solid #000;
+}
+.denim p {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 20px 0;
+}
+.denim .buybtn {
+	width: 195px;
+	height: 40px;
+	margin: 25px auto 0;
+	text-align: center;
+	line-height: 40px;
+	background-color: #000;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+}
+/**** 세일 상품 ****/
+
+.sale {
+	margin: 100px 0 60px;
+}
+.sale .saletitle {
+	width: 290px;
+	height: 70px;
+	background: url(images/label.jpg) no-repeat;
+	background-size: contain;
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	margin: 0 auto;
+}
+.sale > p {
+	text-align: center;
+	margin: 20px 0;
+}
+.sale .saleproduct {
+	display: flex;
+	justify-content: space-around;
+}
+.sale .saleproduct li {
+	width: 23.95833333%;
+}
+.sale .saleproduct li span {
+	display: block;
+	margin: 20px 0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+
+
+/**** Mobile ****/
+
+@media screen and (max-width:415px) {
+	/**** 컨텐츠 ****/
+	.content {
+		padding-top: 90px;
+	}
+	/**** 배너 ****/
+	.banner {
+		background: url(images/ban.jpg) no-repeat 50%;
+		background-size: cover;
+	}
+	.banner .btnAscloitem {
+		height: 50vh;
+	}
+	/**** 상품 ****/
+	.product {
+		flex-direction: column;
+		height: auto;
+	}
+	.product a {
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.product span {
+		order: 2;
+	}
+	.product a:nth-of-type(2) img {
+		margin-bottom: 15px;
+	}
+	.product img {
+		width: 100%;
+		height: auto;
+	}
+	/**** 추천상품 ****/
+	.recommended {
+		/*height: auto;*/
+		display: flex;
+		flex-direction: column;
+	}
+	.recommended > div {
+		width: 100vw;
+	}
+	/**** 할인 상품****/
+	.sale {
+		margin-top: 50px;
+	}
+	.sale .saleproduct {
+		flex-wrap: wrap;
+	}
+	.sale .saleproduct li {
+		width: 40%;
+	}
+}

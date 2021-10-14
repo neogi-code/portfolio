@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="title" content="숙면사이클">
+	<meta name="desciption" content="숙면사이클 리뉴얼.">
+	<meta name="keyword" content="ui ux,숙면사이클,알람,수면분석">
+	<meta property="og:title" content="숙면사이클">
+	<meta property="og:desciption" content="숙면사이클 리뉴얼">
+	<meta property="og:image" content="http://이미지 경로(절대경로)">
+	<meta property="og:url" content="http://웹주소">
+	<title>숙면사이클</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400|Roboto:300,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../common/normalize.css">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script src="shooting_stars.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="section" id="intro">
+			<div class="wrapper">
+ 		  		<div class="Moon"></div>
+    			<div class="ShootingStar"></div>
+      			<div class="Stars">
+            		<div class="StarBottom"></div>
+        		</div>
+       			<div class="BigStars">
+       		   	 <div class="BigStarsBottom"></div>
+       			</div>
+	   		</div>
+	   		<p id="type"></p>
+	   		<div id="mouse-scroll">
+  				<div id="mouse"></div>
+  				<div class="scroll-bars">
+  				<div class="scroll-bar"></div>
+  				<div class="scroll-bar"></div>
+  				</div>
+			</div>
+		</div>
+		<div class="section" id="inform">
+			<div class="left">
+				<div class="wrap">
+					<div class="summary">
+						<h1>숙면사이클</h1>
+						<span>수면 패턴을 분석하고 도움을 줄 수 있는 앱</span>
+					</div>
+					<div class="project">
+						<p class="title">Members</p>
+						<span>김승범/소지영/최정은</span>
+						<p class="title">Date</p>
+						<span>2019. 12. 26 ~ 2020. 01. 29</span>
+						<p class="title">My Participation</p>
+						<div class="part">
+							<span>앱 선정</span>
+							<div class="bar"><div class="gage fill" id="select"></div></div>
+							<span>디자인</span>
+							<div class="bar"><div class="gage fill" id="design"></div></div>
+							<span>프로토타입 제작</span>
+							<div class="bar"><div class="gage fill" id="proto"></div></div>
+						</div>
+						<p class="title">Program</p>
+						<div class="program">
+							<img src="images/invision.png" alt="invision app">
+							<img src="images/photoshop.png" alt="adobe photoshop">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right"></div>
+		</div>
+		<div class="section" id="research">
+			<div class="top">
+				<h2>1. 기존 앱 분석</h2>
+				<div class="halfWrap">
+					<div class="half">
+						<div class="wrap">
+							<h2>Weakness</h2>
+							<ul class="weak">
+								<li>단순한 앱에 햄버거 메뉴 사용으로 뎁스 증가</li>
+								<li>수면 기록이 저장되지 않고 소멸</li>
+								<li>폰트의 색상과 크기가 일정하여 가독성 저하</li>
+							</ul>
+						</div>
+					</div>
+					<div class="half">
+						<div class="wrap">
+							<h2>strength</h2>
+							<ul class="str">
+								<li>타이머 모양을 보고 사용방법을 유추하기 쉬움</li>
+								<li>꺾은선 그래프를 사용함으로써 수면중 변화를 비교하기 쉬움</li>
+								<li>수면음과 알람음 볼륨을 따로 설정 가능함</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="half">
+					<div class="wrap">
+						<h2>2. 현재 앱의 사용자 의견</h2>
+						<ul class="feedback">
+							<li>10시 반까지 맞춰놨는데 9시에 일어났다든지 이럴 때 캔슬을 누르면 완전히 취소가 되어서 앞에 기록도 사라집니다</li>
+							<li>잠잔시간과 잠을 푹 자는지 알려줘서 고마운데 한가지 아쉬운건 지나간 기록을 볼수없다는 것입니다</li>
+							<li>수면 그래프 보여주는 게 제일 흥미로웠어요. 근데 알람 면에서는 잘 일어나지 못하겠어요</li>
+							<li>다좋은데 맞춰놓은시간보다 일찍깼을때 cancle누르면 그래프기록을 볼 수없어서 그냥 맞춰놓은 시간까지 기다려야하는게 좀..일찍일어났을때도 기록보게 해주세요</li>
+							<li>수면 사운드 진짜 잠을 잘자게 해주네요.. 요즘 수면 질이 높아져서 개운해요. 샤오미밴드 사용중인데 수면 데이터 활용해서 그래프로 보여주세요.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="half">
+					<div class="wrap">
+						<p>출처 :구글, 앱스토어 사용자 리뷰, 헬스조선, 연합뉴스, 네이버 블로그</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="change">
+			<h2>3. 앱 개선 방향</h2>
+			<div class="uiVision"><h2>UX Vison</h2><p>수면음악과 수면패턴을 분석하는 기능을 추가하여 꼬인 수면패턴을 한눈에 확인할 수 있게 하여 불면증을 완화하는데 도움을 준다</p></div>
+			<div class="wrap">
+				<div class="circleWrap" id="asIs">
+					<h3>As is</h3>
+					<div class="circle">
+						<ul>
+							<li>자동으로 소멸되는 그래프</li>
+							<li>가독성이 떨어지는 폰트</li>
+							<li>불필요한 뎁스의 낭비</li>
+						</ul>
+					</div>
+				</div>
+				<div class="circleWrap" id="toBe">
+					<h3>To be</h3>
+					<div  class="circle">
+						<ul>
+							<li>그래프 저장으로 생활패턴 파악</li>
+							<li>메인에서 많은 정보 확인 가능</li>
+							<li>중요도에 따른 직관적인 디자인</li>
+							<li>하단 탭바를 배치하여 뎁스 줄이기</li>
+						</ul>
+					</div>
+				</div>
+				<div class="circleWrap" id="goal">
+					<h3>Goal</h3>
+					<div class="circle">직관적<br>+<br>편리함</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="userJourny">
+			<h2>User Journy Map</h2>
+			<div class="wrap">
+				<div class="half"></div>
+				<div class="mapWrap">
+					<div class="map"><span class="big">M</span><span class="position">otive</span><span class="explain">수면상태를 시작적으로<br>확인하고 싶다</span></div>
+					<div class="map"><span class="big">A</span><span class="position">ction</span><span class="explain">'숙면 사이클' 앱을 실행한다</span></div>
+					<div class="map"><span class="big">C</span><span class="position">heck</span><span class="explain">지난 수면 기록을 확인한다</span></div>
+					<div class="map"><span class="big">A</span><span class="position">ppraisal</span><span class="explain">스스로 평가하고 만족한다</span></div>
+					<div class="map"><span class="big">E</span><span class="position">nd</span><span class="explain"></span></div>
+				</div>
+				<div class="sub">
+					<div class="txt">기상/알람 설정</div>
+					<div class="circle first"></div>
+					<div class="circle sec"></div>
+				</div>
+				<div class="comparison">
+					<div class="txt">과거 그래프 비교</div>
+					<div class="circle first"></div>
+					<div class="circle sec"></div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="designConcept">
+			<div class="left">
+				<div class="wrap">
+					<div class="concept">
+						<h2>Design Concept</h2>
+						<p class="txt">
+							밤에 쓰는 앱 특성에 어울리게 어두운 톤으로 디자인하되 따뜻한 느낌을 함께 받을 수 있게 보라색 톤 그라데이션 사용.
+						</p>
+						<p class="txt">
+							사람들이 널리 사용하는 폰트를 사용함으로써 친숙한 느낌을 줌과 동시에 폰트의 굵기를 조절하여 디자인적인 느낌을 살렸음
+						</p>
+					</div>
+					<div class="keyword">
+						<h2>Keyword</h2>
+						<div class="circleWrap">
+							<div class="circle" id="calm">차분함</div>
+							<div class="circle" id="healing">치유</div>
+							<div class="circle" id="sensitive">감성</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="moodWrap">
+					<h3>Mood Board</h3>
+					<div class="mood">
+						<div class="img mood_1"></div>
+						<div class="img mood_2"></div>
+						<div class="img mood_3"></div>
+						<div class="img mood_4"></div>
+					</div>
+				</div>
+				<div class="designColor">
+				 	<h3>Color</h3>
+				 	<div class="colorWrap">
+				 		<div class="color">#280256</div>
+				 		<div class="color">#60149f</div>
+						<img src="images/plus.svg" alt="plus icon">
+				 		<div class="color" id="gradient">Gradient</div>
+				 	</div>
+				</div>
+				<div class="typo">
+					<h3>Typography</h3>
+					<div class="typoWrap">
+						<div class="noto">
+							<p>숙면 사이클</p>
+							<span>Noto Sans CJK</span>
+						</div>
+						<div class="roboto">
+							<p>sleep cycle</p>
+							<span>Roboto</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="uiDesign">
+			<div class="wrap">
+				<div class="left">
+					<h2>Icon</h2>
+					<p>흔히 사용되는 아이콘을 사용하고 일관성 있게 배치하여 사용자의 혼동을 최소화했음.</p>
+					<ul class="iconWrap">
+						<li id="home"></li>
+						<li id="graph"></li>
+						<li id="alarm"></li>
+						<li id="setting"></li>
+					</ul>
+					<h2>UX Vision</h2>
+					<p class="vision">수면음악과 수면패턴을 분석하는 기능을 추가하여 꼬인 수면패턴을 한눈에 확인할 수 있게 하여 불면증을 완화하는데 도움을 준다</p>
+				</div>
+				<div class="uiEx">
+					<h2>UI Design</h2>
+					<div class="img"></div>
+					<p class="setting">실수로 누르기 어렵지만 의도하면 누르기 쉬운<br>우측 상단에 설정 메뉴를 배치</p>
+					<p class="graph">통계의 중요도를 폰트의 크기와 순서로 강조하였고<br>보기 편한 위치인 화면 중간에 배치</p>
+					<p class="bottomBar">하단에 메뉴바를 배치하여 이동이 간편하게 함</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="alarmUi">
+			<div class="wrap">
+				<div class="half">
+					<div class="uiEx" id="alarmMain">
+						<div class="img"><div class="dial"></div></div>
+						<p class="time">다이얼을 돌리거나 시간을 터치하여 시간 설정 가능</p>
+						<p class="day">시간을 설정 후 원하는 요일을 터치하여 설정할 수 있게 아래쪽에 배치</p>
+						<p class="goalTime">사용자가 목표로 하는 시간 설정 가능</p>
+					</div>
+				</div>
+				<div class="half">
+					<div class="uiEx" id="alarmRing">
+						<div class="img"></div>
+						<p class="sound">사운드 바를 슬라이드하여 사운드 조절 가능</p>
+						<p class="repeat">원하는 반복횟수 설정 가능</p>
+						<p class="music">시선의 흐름대로 취침,알람 설정 후 원하는 음악을<br>설정할 수 있도록 마지막에 배치</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="graphUi">
+			<div class="wrap">
+				<div class="img" id="week"></div>
+				<div class="uiEx">
+					<p class="menu">상단의 메뉴바를 통해 주간, 월간 변경 가능</p>
+					<p class="sleep">중요도에 따라 수면단계, 시간, 부족시간 순으로 배치</p>
+				</div>
+				<div class="img" id="month"></div>
+			</div>
+		</div>
+		<div class="section" id="view">
+			<div class="wrap">
+				<div class="pdf img"><a href="uiux_portfolio.pdf" target="_blank" class="draw meet"><span class="spanWrap"><span>View</span><span>PDF</span></span></a></div>
+				<div class="img invision"><a href="https://4553.invisionapp.com/public/share/QZZ6AW4YW" target="_blank" class="draw meet"><span class="spanWrap"><span>View</span><span class="proto">Prototype</span></span></a></div>
+				<div class="img QnA"><a href="QnA.pdf" target="_blank" class="draw meet"><span class="spanWrap"><span>View</span><span>QnA</span></span></a></div>
+			</div>
+		</div>
+		<div class="section" id="review">
+			<div class="wrap">
+				<h3>팀 프로젝트틀 마치며...</h3>
+				<p>이번 프로젝트를 진행하며 조장으로써 프로젝트의 전체적인 틀을 잡는데 큰 기여를 하였지만, 디자인 경험이 부족하여 세부적인 디자인은 서기의 역할을 맡으신 최정은 씨의 도움을 많이 받았습니다.</p>
+				<p>평소에는 당연하게 생각했던 것들이 디자이너분들의 고심 끝에 나온 결과물이라는 것을 알고는 그분들이 존경스러웠습니다.</p>
+				<p>이번 프로젝트를 통해 UI/UX에 대한 이해도가 높아졌으며 이로 인해 퍼블리싱을 진행함에 있어서도 도움이 많이 될 것이라고 자부합니다.</p>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>

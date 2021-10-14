@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+/* 헤더 */
+
+header {
+    background-color: transparent;
+    color: #fff;
+}
+header h1 {
+    background-image: url(common/images/logo.png);
+}
+header .startBtn {
+    background-color: #fff;
+    color: #000;
+}
+header.fixed h1 {
+    background-image: url(common/images/logo_black.png);
+}
+header.fixed  {
+    color: #000;
+    background-color: #fff;
+}
+header.fixed .startBtn {
+    background-color: #000;
+    color: #fff;
+}
+/* 메인배너 */
+
+.mainBanner {
+    height: 640px;
+}
+.mainBanner .swiper-slide.first {
+    position: relative;
+}
+.mainBanner video {
+    width: 100%;
+    position: absolute;
+    top: -30%;
+}
+.mainBanner .swiper-container {
+    min-width: 1350px;
+}
+.mainBanner .swiper-slide.first {
+    background: url(images/main_banner01.png) no-repeat;
+}
+.mainBanner .swiper-slide.second {
+    background: url(images/main_banner02.png) no-repeat;
+}
+.mainBanner .swiper-slide.third {
+    background: url(images/main_banner03.png) no-repeat;
+}
+.mainBanner .swiper-container .swiper-slide {
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.mainBanner .arrow {
+    height: 100%;
+}
+
+/* 메인배너 텍스트 박스 */
+
+.mainBanner .swiper-slide.first h2 {
+    margin-bottom: 40px;
+}
+.mainBanner .txtBox {
+    width: 1080px;
+    margin: 0 auto;
+    transform: translateY(80%);
+    text-align: left;
+    color: #fff;
+}
+.mainBanner .txtBox h2 {
+    font-size: 50px;
+    line-height: 1.2;
+    transform: translateY(-30%);
+    opacity: 0;
+    transition: 1s;
+}
+.mainBanner .txtBox .btn {
+    width: 130px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #000;
+    transition: .2s;
+}
+.mainBanner .txtBox .btn:hover {
+    background-color:#af67db;
+    color: #fff;
+}
+.mainBanner .txtBox p {
+    margin: 32px 0;
+    transform: translateY(30%);
+    opacity: 0;
+    transition: 1s;
+}
+
+/* 메인배너 텍스트 페이드인 */
+.mainBanner .swiper-slide-active h2,
+.mainBanner .swiper-slide-active p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* 메인 컨텐츠 */
+
+.content {
+    padding-bottom: 150px;
+    background: url(images/img_source.png) no-repeat 65% 0;
+    padding-top: 160px;
+    text-align: left;
+    border-bottom: 1px solid #999;
+}
+.content p {
+    margin: 0;
+    font-size: 36px;
+}
+.content .position {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.content .position .txtBox {
+    padding-left: 15%;
+}
+.content .txtBox p {
+    margin-bottom: 10px;
+}
+.content .txtBox p span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(images/txt_da.png) no-repeat 0;
+}
+.content .txtBox .txt {
+    color: #999;
+}
+.content .swiper-container {
+    padding-top: 80px;
+}
+.content .swiper-container .arrow {
+    background: rgba(0,0,0,.5);
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.content .swiper-container .arrow:after {
+    margin: 0;
+}
+.content .swiper-container .arrow:hover {
+    background: #000;
+}
+.content .swiper-container .swiper-wrapper {
+    margin-left: 15%;
+}
+
+.content .swiper-container .uiUx {
+    background: #28045b url(images/ui_ux.jpg);
+}
+.content .swiper-container .shopping {
+    background: #f8f8f8 url(images/reponsive-web.jpg);
+}
+.content .swiper-container .plugin {
+    background:  #d6d6d6 url(images/ferrari_plugin.jpg);
+}
+.content .swiper-container .swiper-slide.reserve {
+    background:  #dfdfdf url(images/pension_intro.jpg) no-repeat 50%;
+    background-size: 90%;
+}
+.content .swiper-container .swiper-slide {
+    width: 528px;
+    height: 396px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* 호버 이벤트 텍스트 */
+
+.content .swiper-slide {
+    border: 1px solid #f1f1f1;
+}
+.content .swiper-container a {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 0 50px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    transition: .2s;
+}
+.content .swiper-container .swiper-slide:hover a {
+    opacity: 1;
+}
+.content .swiper-container a .title {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* 스킨 선택 */
+
+.skin .skinTxt h3 {
+    font-size: 36px;
+    font-weight: 300;
+    padding-top: 180px;
+}
+.skin .skinTxt span:nth-child(2) {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+.skin .skinTxt .skinBgi {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px;
+    padding-bottom: 15px;
+    background: url(images/skin_source.png) no-repeat 0 50%;
+    background-size: contain;
+}
+
+.skin aside {
+    display: flex;
+    justify-content: center;
+    padding: 180px 0;
+    align-items: center;
+}
+.skin aside .txtBox {
+    text-align: left;
+    margin: 0 8% 0 7%;
+}
+.skin aside .txtBox h2 {
+    font-size: 48px;
+    font-weight: lighter;
+    line-height: 1.23;
+}
+.skin aside .txtBox span {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.skin .verticalSwiper {
+    overflow: hidden;
+    box-shadow: 0px 6px 15px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    background: url(images/ul_head.jpg) no-repeat 0 0;
+    background-size: contain;
+}
+.skin .verticalSwiper .swiper-container {
+    width: 480px;
+    height: 714px;
+    transform: rotate(180deg);
+}
+.skin .verticalSwiper .swiper-slide {
+    transform: rotate(180deg);
+}
+.skin .verticalSwiper .swiper-slide.bg01 {
+    height: 437px;
+    background: url(images/ul_bgi01.jpg);
+}
+.skin .verticalSwiper .swiper-slide.bg02 {
+    height: 151px;
+    background: url(images/ul_bgi02.jpg);
+}
+.skin .verticalSwiper .swiper-slide.bg03 {
+    height: 142px;
+    background: url(images/ul_bgi03.jpg);
+}
+.skin .verticalSwiper .swiper-wrapper .swiper-slide { 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 스킨 선택 사이드 스와이퍼 */
+
+.skin .sideSwiper {
+    width: 480px;
+}
+.skin .sideSwiper .swiper-container {
+    width: auto;
+    padding-left: 10px;
+    height: 260px;
+    /* position: absolute; */
+    top: 25%;
+}
+.skin .sideSwiper .swiper-container .swiper-slide.bg01 {
+    background-image: url(images/side_bg01.jpg);
+}
+.skin .sideSwiper .swiper-container .swiper-slide.bg02 {
+    background-image: url(images/side_bg02.jpg);
+}
+.skin .sideSwiper .swiper-container .swiper-slide.bg03 {
+    background-image: url(images/side_bg03.jpg);
+}
+.skin .sideSwiper .swiper-container .swiper-slide {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+/* 스크롤 슬라이드 */
+
+.scrollSlide {
+    height: 1000px;
+}
+.scrollSlide .slideWrap {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    position: relative;
+}
+.scrollSlide .swiper-wrapper {
+    transition: .6s;
+}
+.scrollSlide .left {
+    width: 30%;
+}
+.scrollSlide .right {
+    width: 70%;
+}
+.scrollSlide .right .swiper-container {
+    position: relative;
+}
+.scrollSlide .left .bg01 {
+    background-image: url(images/photo_skin01.jpg);
+}
+.scrollSlide .left .bg03 {
+    background-image: url(images/photo_skin03.jpg);
+}
+.scrollSlide .right .bg02 {
+    background-image: url(images/photo_skin02.jpg);
+}
+.scrollSlide .right .bg04 {
+    background-image: url(images/photo_skin04.jpg);
+}
+.scrollSlide .leftImg .bg01 {
+    background-image: url(images/photo_skin01_sm.jpg);
+}
+.scrollSlide .leftImg .bg03 {
+    background-image: url(images/photo_skin03_sm.jpg);
+}
+.scrollSlide .rightImg .bg02 {
+    background-image: url(images/photo_skin02_sm.jpg);
+}
+.scrollSlide .rightImg .bg04 {
+    background-image: url(images/photo_skin04_sm.jpg);
+}
+.scrollSlide .leftImg,
+.scrollSlide .left .swiper-slide,
+.scrollSlide .right .swiper-slide,
+.scrollSlide .leftImg .swiper-slide,
+.scrollSlide .rightImg .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+.scrollSlide .aniTxt {
+    position: absolute;
+    top: 40%; left: 50%;
+    z-index: 999;
+    text-align: justify;
+    transition: .6s;
+}
+.scrollSlide .aniTxt h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.scrollSlide .centerArea {
+    position: absolute;
+    left: 30%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: 540px;
+    box-shadow: 1px 1px 5px;
+    z-index: 999;
+}
+.scrollSlide .centerArea > *{
+    float: left;
+    width: 270px; height: 270px;
+}
+.scrollSlide .centerArea .txtBox {
+    background-color: #f8f8f8;
+    position: relative;
+}
+.scrollSlide .centerArea .firstTxt,
+.scrollSlide .centerArea .secondTxt {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 1px;
+    transition: .6s;
+}
+.scrollSlide .centerArea .title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #8d725a;
+    position: relative;
+}
+.scrollSlide .centerArea .title:after {
+    content: "";
+    width: 10%;
+    height: 1px;
+    background-color: #8d725a;
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translate(-50%);
+}
+.scrollSlide .centerArea span {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+}
+.scrollSlide .centerArea .txt {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+.scrollSlide .centerArea .secondTxt {
+    opacity: 0;
+}
+
+/* 다큐먼트 스크롤 이벤트 */
+
+.scrollSlide.move .swiper-wrapper {
+    margin-left: -100%;
+}
+.scrollSlide.move .aniTxt {
+    color: #f8f8f8;
+}
+.scrollSlide.move .centerArea .secondTxt {
+    opacity: 1;
+}
+.scrollSlide.move .centerArea .firstTxt {
+    opacity: 0;
+}
+
+/* 스킨커버 스크롤 슬라이드 */
+
+.skinCover {
+    height: 1000px;
+    position: relative;
+}
+.skinCover .top {
+    height: 40%;
+}
+.skinCover .bottom {
+    height: 60%;
+    overflow: hidden;
+}
+.skinCover .bottom ul {
+    height: 200%;
+    transition: .6s;
+}
+.skinCover .bottom .bg01 {
+    background-image: url(images/skin_cover01.jpg);
+}
+.skinCover .bottom .bg02 {
+    background-image: url(images/skin_cover02.jpg);
+}
+.skinCover .bottom li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 50%;
+}
+.skinCover .txt {
+    text-align: left;
+    margin: 0 auto;
+    padding: 180px 0 0 280px;
+}
+.skinCover .txt h3 {
+    font-size: 36px;
+    font-weight: lighter;
+}
+.skinCover .txt p {
+    color: #777;
+    margin-top: 15px;
+}
+.skinCover .scrollImg {
+    width: 540px;
+    height: 540px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px;
+    position: absolute;
+    left: 50%; top: 27.5%;
+}
+.skinCover .scrollImg .bgiHead {
+    padding-top: 60px;
+    box-sizing: border-box;
+    height: 100%;
+    background: url(images/ul_head.jpg) no-repeat;
+    background-size: contain;
+    z-index: 9999;
+    position: relative;
+}
+.skinCover .scrollImg .smImg {
+    width: 100%;
+    height: 200%;
+    background: url(images/skin_cover_sm.jpg) no-repeat 0 0;
+    background-size: cover;
+    transition: .6s;
+    position: absolute;
+    top: 0; left: -5%;
+}
+/* 스킨커버 스크롤 슬라이드 이벤트 */
+.skinCover.move .scrollImg .smImg {
+    margin-top: -100%;
+}
+.skinCover.move .bottom ul {
+    margin-top: -600px;
+}
+
+/* more content */
+
+.moreContent {
+    padding-bottom: 150px;
+    border-bottom: 1px solid #999;
+}
+.moreContent .txtBox {
+    width: 950px;
+    text-align: left;
+    padding: 150px 0 0 450px;
+}
+.moreContent .txtBox p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.moreContent .txtBox a {
+    font-size: 56px;
+    color: #999;
+}
+.moreContent span {
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    margin-right: 15px;
+}
+.moreContent a:nth-of-type(1) span::before {
+    content: "01";
+}
+.moreContent a:nth-of-type(2) span::before {
+    content: "02";
+}
+.moreContent a:nth-of-type(3) span::before {
+    content: "03";
+}
+.moreContent a:nth-of-type(4) span::before {
+    content: "04";
+}
+.moreContent a:nth-of-type(5) span::before {
+    content: "05";
+}
+.moreContent a span:before {
+    font-size: 14px;
+    position: absolute;
+    right: -14px; top: 5px;
+}
+.moreContent span:after {
+    content: "";
+    width: 0;
+    height: 8px;
+    background-color: rgba(220, 20, 60, .8);
+    position: absolute;
+    left: 0; bottom: 6px;
+    transition: .3s;
+}
+.moreContent  a:hover {
+    color: #000;
+}
+.moreContent a:hover span:after {
+    width: 100%;
+}

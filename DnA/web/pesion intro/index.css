@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+
+/* 애니메이션 */
+
+@media screen and (max-width: 42.5em) {
+    .next-slide,
+    .prev-slide {
+        display: none;
+    }
+}
+@media screen and (max-width: 61.25em) {
+    .slider {
+        max-height: 57.95918367vw;
+    }
+}
+@media screen and (min-height: 61.25em) {
+    .slider {
+        max-height: 57.95918367vw;
+    }
+}
+
+/* 애니메이션 배너 */
+.swiper-container {
+	width: 100%;
+	max-width: 1903px;
+	height: 720px;
+}
+.swiper-slide.first {
+	background: url(images/banner01.jpg);
+}
+.swiper-slide.second {
+	background: url(images/banner02.jpg);
+}
+.swiper-slide.third {
+	background: url(images/banner03.jpg);
+}
+.swiper-slide.fourth {
+	background: url(images/banner04.jpg);
+}
+.main .swiper-slide {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+	position: relative;
+}
+.swiper-container .arrow {
+	height: 100%;
+}
+.swiper-slide {
+	position: relative;
+}
+.swiper-slide .bgc {
+	background-color: rgba(0,0,0,.2);
+	width: 100%; height: 100%;
+	position: absolute;
+}
+/* 배너 텍스트 */
+
+.mainBanner .txtBox {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+	color: #fff;
+	position: absolute;
+	top: 40%; left: 50%;
+	transform: translate(-50%);
+}
+.mainBanner .txtBox h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    transform: translateY(-30%);
+    opacity: 0;
+	transition: 1s;
+	margin: 10px 0;
+}
+.mainBanner .txtBox p {
+    margin: 1px 0;
+    transform: translateY(30%);
+    opacity: 0;
+	transition: 1s 1s;
+	font-size: 30px;
+}
+.mainBanner .second .txtBox h2,
+.mainBanner .second .txtBox p {
+	transform: translate(-20%,0);
+}
+.mainBanner .third .txtBox h2,
+.mainBanner .third .txtBox p {
+	transform: translate(20%,0);
+}
+.mainBanner .fourth .txtBox h2,
+.mainBanner .fourth .txtBox p {
+	transform: translate(0, 30%);
+}
+.swiper-button-next.arrow  {
+	right: 2vw;
+	left: auto;
+}
+/* 메인배너 텍스트 페이드인 */
+.mainBanner .swiper-slide-active .txtBox h2,
+.mainBanner .swiper-slide-active .txtBox p{
+	transform: translate(0,0);
+    opacity: 1;
+}
+.mainBanner .swiper-slide-active .txtBox h2 {
+	transition: 1s;
+}
+.mainBanner .swiper-slide-active .txtBox p {
+	transition: 1s 1s;
+}
+/* 갤러리 */
+
+.gallery {
+	margin: 3vw auto;
+}
+.gallery .top ul {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+.gallery .top a {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	border: 1px solid rgba(0,0,0,.3);
+	position: relative;
+}
+.gallery .galleryImg {
+	width: 24%;
+	padding-bottom: 2vw;
+}
+.gallery span:first-of-type {
+	overflow: hidden;
+}
+.galleryImg:hover img {
+	transform: scale(1.123) rotate(5deg);
+	transition: .5s;
+}
+.gallery .galleryImg .title {
+	font-size: 1.143rem;
+	padding: .7vw;
+	position: relative;
+	border-top: 1px solid #999;
+}
+.gallery .galleryImg .title:after {
+	content: "";
+	width: 12%;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	bottom: 1%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.gallery .galleryImg .explain {
+	padding: 5px 0 10px;
+	font-size: 0.857rem;
+}
+.gallery .bottom {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+}
+.gallery .part {
+	min-width: 250px;
+	text-align: left;
+	position: relative;
+}
+.gallery .part:first-child {
+	display: flex;
+	flex-direction: column;
+}
+.gallery .bottom .title {
+	font-size: 1.2rem;
+	position: relative;
+}
+.gallery .bottom .title:after {
+	content: "";
+	width: 12%;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	left: 0; bottom: -5px;
+}
+.gallery .bottom .title:before {
+	content: "Notice";
+	position: absolute;
+	left: 5.5rem; bottom: 5%;
+	color: #eb4605;
+	font-size: 1rem;
+}
+.gallery .bottom .btn {
+	position: absolute;
+	right: 0;
+	background-color: #555;
+	color: #fff;
+	width: 52px;
+	height: 20px;
+	text-align: center;
+}
+.gallery .community {
+	text-align: left;
+	margin-top: 20px;
+}
+.gallery .community li {
+	padding: 4px 0;
+	text-indent: 10px;
+	background: url(images/dot.png) no-repeat 0;
+	background-size: 3px;
+	font-size: .8rem;
+}
+.gallery .call h2 {
+	/* font-size: 1.2vw; */
+}
+.gallery .call span {
+	/* font-size: 0.714rem; */
+	display: block;
+	margin: 10px 0;
+}
+.gallery .call span:nth-child(2) {
+	margin: 6px 0;
+}
+.gallery .call .linked {
+	font-size: 16px;
+	text-indent: 50px;
+	background: url(images/call.png) no-repeat 0;
+	background-size: 12%;
+	padding: 5px 0;
+	margin: 4px 0;
+	color: #eb4605;
+}
+.gallery .call .consult {
+	background: url(images/clock.png) no-repeat 0 50%;
+	background-size: 20px;
+}
+.gallery .call .kakao {
+	background: url(images/kakao.png) no-repeat 0 50%;
+	background-size: 20px;
+}
+.gallery .call a~span {
+	text-indent: 30px;
+	padding: 3px;
+	font-size: 0.8rem;
+}
+
+/* bgi area */
+
+.container .content {
+	width: 100%;
+	max-width: unset;
+	height: 500px;
+	background: url(images/bgi01.jpg) no-repeat 70%;
+	background-attachment: 	fixed;
+	background-size: cover;
+}
+.content .bgi {
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .slideText {
+	color: #fefefe;
+	font-size: 1.97916667vw;
+}
+.content span {
+	display: block
+}
+
+/* 동영상 홍보 */
+
+.videoWrap {
+	width: 100%;
+	max-width: 1903px;
+	background-color: #000;	
+}
+.video.wrap {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 0;
+	color: #fff;
+}
+.video .part {
+	width: 31%;
+}
+.video .iframeWrap {
+	position:relative;
+	width:100%; height:0;
+	padding-bottom:56.25%;
+	left: 0;
+}
+.video iframe {
+	position:absolute;
+	width:100%;
+	height:100%;
+	margin-left: -50%;
+}
+.video .txtBox h4{
+	margin: 15px;
+	margin-top: 25px;
+	font-size: 1.286rem;
+}
+
+/* 포토앨범 */
+
+.photoAlbum  {
+	padding: 100px 0;
+}
+.photoAlbum > span {
+	display: block;
+	padding: 20px 0 16px;
+	position: relative;
+}
+.photoAlbum > span:after {
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+	left: 50%; bottom: 0;
+	transform: translate(-50%);
+}
+.photoAlbum img {
+	border: 1px solid rgb(225,225,225);
+}
+.photoAlbum .photos {
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+.photoAlbum .photos .item {
+	width: 30%;
+	margin: 1%;
+    border: 1px solid #c3c5c7;
+}
+.photoAlbum .photos .item img {
+	border: 1px solid #c3c5c7;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.photoAlbum .photos .item span {
+	display: block;
+	margin: 5px 0;
+}
+.photos .item:hover span {
+	background-color: #c21414;
+	color: #fff;
+}
+
+
+/* 태블릿 버전 */
+
+@media screen and (max-width: 1100px) {
+	.mainBanner .txtBox {
+		width: auto;
+		position: unset;
+		transform: none;
+	}
+	.mainBanner .txtBox h2 {
+		font-size: 5.455vw;
+	}
+	.mainBanner .txtBox p {
+		font-size: 2.727vw;
+	}
+	.mainBanner .bgc {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.gallery .galleryImg {
+		width: 45%;
+	}
+	.gallery .bottom {
+		padding: 20px 0;
+		grid-template-columns: repeat(2,.5fr);
+	}
+	.gallery .bottom .part {
+		margin-bottom: 20px;
+	}
+	.gallery .bottom .part:nth-of-type(1),
+	.gallery .bottom .part:nth-of-type(3) {
+		margin-right: auto;
+		margin-left: 8%;
+	}
+
+	.gallery .bottom .part:nth-of-type(2) {
+		width: 80%;
+		grid-row: span 3;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.gallery .bottom a {
+		width: 100%;
+	}
+	.content .slideText {
+		font-size: 2.727vw;
+	}
+}
+@media screen and (max-width: 515px) {
+	.mainBanner .txtBox h2 {
+		font-size: 8.155vw;
+	}
+	.mainBanner .txtBox p {
+		font-size: 3.883vw;
+	}
+	.gallery .galleryImg {
+		width: 85%;
+		margin: 10px 0;
+	}
+	.gallery .bottom {
+		grid-template-columns: 1fr;
+	}
+	.gallery .bottom .part:first-of-type {
+		width: 85%;
+	}
+	.content .slideText {
+		font-size: 22px;
+	}
+	.video.wrap {
+		flex-direction: column;
+	}
+	.video .part {
+		width: 80%;
+	}
+	.video .txtBox {
+		margin: 2.913vw 0;
+	}
+	.video .txtBox h4 {
+		margin: 2.913vw 0;
+	}
+	.photoAlbum {
+		padding: 50px 0;
+	}
+	.photoAlbum .photos {
+		flex-direction: column;
+	}
+	.photoAlbum .photos .item {
+		width: 90%;
+		margin: 10px auto;
+	}
+}

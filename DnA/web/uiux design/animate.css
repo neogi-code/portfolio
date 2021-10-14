@@ -1,0 +1,459 @@
+@charset "utf-8";
+/**** 별똥별 배경 ****/
+ .wrapper {
+ 	width: 100%;
+ 	height: 100%;
+	 overflow: hidden;
+	 position: relative;
+}
+ .StarsWrapper {
+	 font-size: 400px;
+	 position: relative;
+	 height: 80vh;
+	 z-index: -10;
+	 overflow: hidden;
+	 opacity: 0.5;
+}
+ .StarsWrapper:after {
+	 content: "";
+	 background: #5749aa;
+	 background: linear-gradient(0deg, rgba(87, 73, 170, 1) 0%, rgba(87, 73, 170, 0.8634804263502276) 23%, rgba(87, 73, 170, 0.6449930313922444) 55%, rgba(87, 73, 170, 0) 100%);
+	 bottom: 0;
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 left: 0;
+}
+/* top part of the small stars*/
+ .Stars {
+	 position: fixed;
+	 top: 100px;
+	 left: 100px;
+	 z-index: 9;
+	 width: 10px;
+	 height: 10px;
+	 background: #fff;
+	 overflow: hidden;
+	 animation: glitter 6.5s linear 0s infinite normal;
+	 -webkit-animation: glitter 6.5s linear 0s infinite normal;
+	 -moz-animation: glitter 6.5s linear 0s infinite normal;
+	 -ms-animation: glitter 6.5s linear 0s infinite normal;
+	 -o-animation: glitter 6.5s linear 0s infinite normal;
+}
+ .Stars:before, .Stars:after {
+	 content: "";
+	 width: 10px;
+	 height: 10px;
+	 background: #5749aa;
+	 top: -50%;
+	 position: absolute;
+	 border-radius: 50%;
+}
+ .Stars:before {
+	 left: 50%;
+}
+ .Stars:after {
+	 left: -50%;
+}
+/* bottom part of the small stars*/
+ .StarBottom {
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 width: 10px;
+	 height: 10px;
+	 overflow: hidden;
+}
+ .StarBottom:before, .StarBottom:after {
+	 content: "";
+	 width: 10px;
+	 height: 10px;
+	 background: #5749aa;
+	 top: 50%;
+	 position: absolute;
+	 border-radius: 50%;
+}
+ .StarBottom:before {
+	 left: 50%;
+}
+ .StarBottom:after {
+	 left: -50%;
+}
+/* top part of the small stars*/
+ .BigStars {
+	 position: absolute;
+	 top: 100px;
+	 left: 100px;
+	 width: 20px;
+	 height: 20px;
+	 overflow: hidden;
+	 animation: glitter 2.5s linear 2s infinite normal;
+	 -webkit-animation: glitter 2.5s linear 2s infinite normal;
+	 -moz-animation: glitter 2.5s linear 0s infinite normal;
+	 -ms-animation: glitter 2.5s linear 0s infinite normal;
+	 -o-animation: glitter 2.5s linear 0s infinite normal;
+}
+ .BigStars:before, .BigStars:after {
+	 content: "";
+	 width: 20px;
+	 height: 20px;
+	 top: -50%;
+	 position: absolute;
+	 border-radius: 50%;
+}
+ .BigStars:before {
+	 left: 50%;
+}
+ .BigStars:after {
+	 left: -50%;
+}
+/* bottom part of the small stars*/
+ .BigStarsBottom {
+	 position: absolute;
+	 top: 0px;
+	 left: 0px;
+	 width: 20px;
+	 height: 20px;
+	 overflow: hidden;
+}
+ .BigStarsBottom:before, .BigStarsBottom:after {
+	 content: "";
+	 width: 20px;
+	 height: 20px;
+	 top: 50%;
+	 position: absolute;
+	 border-radius: 50%;
+}
+ .BigStarsBottom:before {
+	 left: 50%;
+}
+ .BigStarsBottom:after {
+	 left: -50%;
+}
+ .Moon {
+	 position: fixed;
+	 right: 10%;
+	 top: 10%;
+	 margin: auto;
+	 width: 8.854vw;
+	 height: 8.854vw;
+	 z-index: -6;
+}
+/* moon background to hide grneated stars behind of the moon */
+ .Moon:after {
+	 content: "";
+	 position: absolute;
+	 left: 30%;
+	 top: 30%;
+	 width: 41.17647058823529%;
+	 height: 41.17647058823529%;
+	 border-radius: 50%;
+	 background: #fff;
+	 opacity: 1;
+	 box-shadow: 0px 0px 540px 50px #fff;
+	 z-index: -7;
+	 -webkit-animation: glowing 1.5s linear infinite;
+	 -moz-animation: glowing 1.5s linear infinite alternate;
+	 -ms-animation: glowing 1.5s linear infinite alternate;
+	 -o-animation: glowing 1.5s linear infinite alternate;
+	 animation: glowing 1.5s linear infinite alternate;
+}
+ .ShootingStar {
+	 transform: rotate(-45deg);
+	 margin: 25px 0;
+	 top: 100%;
+	 right: 20%;
+	 position: absolute;
+	 height: 2px;
+	 border: 0;
+	 opacity: 0.5;
+	 width: 150px;
+	 z-index: -20;
+	 background: #fff;
+	 box-shadow: 0px 0px 70px 1px #fff;
+	 -webkit-box-shadow: 0px 0px 70px 1px #fff;
+	 -moz-box-shadow: 0px 0px 70px 1px #fff;
+	 background: -webkit-gradient(linear, 0 0, 100% 10, from(#5749aa), to(#5749aa), color-stop(0%, #fff));
+	 -moz-animation: ShootingStarsOne 2s linear 3s, ShootingStarsTwo 2s linear 9s;
+	 -ms-animation: ShootingStarsOne 2s linear 3s, ShootingStarsTwo 2s linear 9s;
+	 -o-animation: ShootingStarsOne 2s linear 3s, ShootingStarsTwo 2s linear 9s;
+	 animation: ShootingStarsOne 2s linear 3s, ShootingStarsTwo 2s linear 6s, ShootingStarsOne 2s linear 10s, ShootingStarsTwo 2s linear 15s, ShootingStarsOne 2s linear 20s, ShootingStarsTwo 2s linear 25s, ShootingStarsOne 2s linear 32s, ShootingStarsTwo 2s linear 40s;
+	 -webkit-animation: ShootingStarsOne 2s linear 3s, ShootingStarsTwo 2s linear 6s, ShootingStarsOne 2s linear 10s, ShootingStarsTwo 2s linear 15s, ShootingStarsOne 2s linear 20s, ShootingStarsTwo 2s linear 25s, ShootingStarsOne 2s linear 32s, ShootingStarsTwo 2s linear 40s;
+}
+ .ShootingStar:after {
+	 content: "";
+	 position: absolute;
+	 height: 5px;
+	 width: 7px;
+	 top: -2px;
+	 left: -3px;
+	 border-radius: 55%;
+	 background: #fff;
+	 box-shadow: 0px 0px 40px 10px #fff;
+}
+ @keyframes glowing {
+	 from {
+		 box-shadow: 0px 0px 100px 10px #fff;
+	}
+	 to {
+		 box-shadow: 0px 0px 140px 20px #fff;
+	}
+}
+ @-webkit-keyframes glowing {
+	 from {
+		 -webkit-box-shadow: 0px 0px 540px 50px #fff;
+	}
+	 to {
+		 -webkit-box-shadow: 0px 0px 240px 60px #fff;
+	}
+}
+ @-moz-keyframes glowing {
+	 from {
+		 -moz-box-shadow: 0px 0px 540px 50px #fff;
+	}
+	 to {
+		 -moz-box-shadow: 0px 0px 240px 60px #fff;
+	}
+}
+ @-moz-keyframes glitter {
+	 0% {
+		 -moz-transform: scale(0.8);
+		 opacity: 1;
+	}
+	 25% {
+		 -moz-transform: scale(0.5);
+		 opacity: 0.5;
+	}
+	 50% {
+		 -moz-transform: scale(0.8);
+		 opacity: 1;
+	}
+	 75% {
+		 -moz-transform: scale(0.5);
+		 opacity: 0.5;
+	}
+	 100% {
+		 -moz-transform: scale(0.8);
+		 opacity: 1;
+	}
+}
+ @-webkit-keyframes glitter {
+	 0% {
+		 -webkit-transform: scale(0.8);
+		 opacity: 1;
+	}
+	 25% {
+		 -webkit-transform: scale(0.5);
+		 opacity: 0.5;
+	}
+	 50% {
+		 -webkit-transform: scale(0.8);
+		 opacity: 1;
+	}
+	 75% {
+		 -webkit-transform: scale(0.5);
+		 opacity: 0.5;
+	}
+	 100% {
+		 -webkit-transform: scale(0.8);
+		 opacity: 1;
+	}
+}
+ @-moz-keyframes glitter {
+	 0% {
+		 -moz-transform: scale(1);
+		 opacity: 1;
+	}
+	 25% {
+		 -moz-transform: scale(0.5);
+		 opacity: 0.5;
+	}
+	 50% {
+		 -moz-transform: scale(1);
+		 opacity: 1;
+	}
+	 75% {
+		 -moz-transform: scale(0.5);
+		 opacity: 0.5;
+	}
+	 100% {
+		 -moz-transform: scale(1);
+		 opacity: 1;
+	}
+}
+ @keyframes ShootingStarsOne {
+	 from {
+		 opacity: 1;
+		 width: 150px;
+		 left: 80%;
+		 top: -500px;
+		 -webkit-transform: rotate(-45deg) height;
+	}
+	 to {
+		 opacity: 0;
+		 width: 350px;
+		 left: -50%;
+		 top: 550px;
+		 -webkit-transform: rotate(-20deg);
+	}
+}
+ @-webkit-keyframes ShootingStarsOne {
+	 from {
+		 opacity: 1;
+		 width: 150px;
+		 left: 80%;
+		 top: -500px;
+		 -webkit-transform: rotate(-45deg) height;
+	}
+	 to {
+		 opacity: 0;
+		 width: 350px;
+		 left: -50%;
+		 top: 550px;
+		 -webkit-transform: rotate(-20deg);
+	}
+}
+ @-webkit-keyframes ShootingStarsTwo {
+	 from {
+		 opacity: 1;
+		 width: 150px;
+		 left: 120%;
+		 top: -500px;
+		 -webkit-transform: rotate(-45deg) height;
+	}
+	 to {
+		 opacity: 0;
+		 width: 350px;
+		 left: 45%;
+		 top: 550px;
+		 -webkit-transform: rotate(-40deg);
+	}
+}
+ @-moz-keyframes ShootingStarsTwo {
+	 from {
+		 opacity: 1;
+		 width: 150px;
+		 left: 120%;
+		 top: -500px;
+		 -moz-transform: rotate(-45deg) height;
+	}
+	 to {
+		 opacity: 0;
+		 width: 350px;
+		 left: 45%;
+		 top: 550px;
+		 -moz-transform: rotate(-40deg);
+	}
+}
+ @-moz-keyframes ShootingStarsTwo {
+	 from {
+		 opacity: 0;
+		 width: 150px;
+		 left: 120%;
+		 top: -500px;
+		 -moz-transform: rotate(-45deg) height;
+	}
+	 to {
+		 opacity: 1;
+		 width: 350px;
+		 left: 45%;
+		 top: 550px;
+		 -moz-transform: rotate(-40deg);
+	}
+}
+ @keyframes ShootingStarsTwo {
+	 from {
+		 opacity: 1;
+		 width: 150px;
+		 left: 120%;
+		 top: -500px;
+		 transform: rotate(-45deg) height;
+	}
+	 to {
+		 opacity: 0;
+		 width: 350px;
+		 left: 45%;
+		 top: 550px;
+		 transform: rotate(-40deg);
+	}
+}
+
+ #mouse-scroll {
+	 position: absolute;
+	 bottom: 2%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ #mouse-scroll #mouse {
+	 border: 2px solid #fff;
+	 height: 45px;
+	 width: 25px;
+	 border-radius: 20px;
+}
+ #mouse-scroll #mouse:after {
+	 content: '';
+	 height: 6px;
+	 width: 4px;
+	 background-color: #fff;
+	 border-radius: 50%;
+	 position: absolute;
+	 left: 50%;
+	 top: 40%;
+	 transform: translate(-50%, -50%);
+	 animation: mouse 1.2s infinite;
+}
+ #mouse-scroll .scroll-bars {
+	 position: absolute;
+	 top: calc(100% + 5px + 5px);
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ #mouse-scroll .scroll-bars .scroll-bar {
+	 height: 13px;
+	 width: 13px;
+	 border-color: #fff;
+	 border-width: 0 0 2px 2px;
+	 border-style: solid;
+	 transform: rotate(-45deg);
+	 animation: arrow 1s infinite;
+}
+ #mouse-scroll .scroll-bars .scroll-bar:not(:first-child) {
+	 margin-top: -8px;
+}
+ #mouse-scroll .scroll-bars .scroll-bar:nth-child(1) {
+	 animation-delay: calc(.2s * 1);
+}
+ #mouse-scroll .scroll-bars .scroll-bar:nth-child(2) {
+	 animation-delay: calc(.2s * 2);
+}
+ @keyframes arrow {
+	 0% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 1;
+	}
+}
+ @keyframes mouse {
+	 0% {
+		 top: 20%;
+	}
+	 90% {
+		 top: 40%;
+	}
+	 100% {
+		 top: 20%;
+	}
+}
+
+@keyframes flash {
+	0 {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

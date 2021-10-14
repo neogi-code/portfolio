@@ -1,0 +1,38 @@
+@charset "uft-8";
+
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+a:focus,
+button:focus
+div:focus {
+outline: none;
+}
+.container {
+    width: 1024px;
+    height: 961px;
+    padding-top: 375px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: auto;
+    background: url(images/상단타이틀.png) no-repeat 50% 0;
+}
+.swiper-slide {
+    width: 730px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #ededed;
+    font-size: 42px;
+    font-weight: 700;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 54px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 54px;
+}

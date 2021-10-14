@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+header .co {
+    color: #d71921;
+}
+.main   {
+    background-color: transparent;
+}
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/cm.jpg) no-repeat 0 fixed;
+    background-size: cover;
+}
+.one p {
+    font-size: 3rem;
+    margin: 2.4rem 0 40rem;
+    color: #fff;
+}
+
+.one .swiper-container {
+    width: 100%;
+    position: absolute;
+    bottom: 16%; left: 0;
+    z-index: 1;
+}
+.one .swiper-wrapper {
+    margin-left: 14rem;
+}
+.one .swiper-slide {
+    width: 362px;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.one .arrow {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    transform: rotate(180deg);
+}
+.one .arrow::after {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.one .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .6;
+}
+.one .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: auto;
+    right: 3.2rem;
+}
+.one .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: auto;
+    left: 3.2rem;
+}
+
+.two {
+    position: relative;
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+    /* background: url(/images/) no-repeat 0; */
+    background-size: cover;
+}
+.two h3 {
+    font-size: 2rem;
+    margin-bottom: 3.1rem;
+}
+.two p {
+    font-size: 3rem;
+    line-height: 1.67;
+}
+.two .txtWrap {
+    position: absolute;
+    top: 42%; left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.two > span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5.4rem;
+    font-size: 2rem;
+}
+.lnb {
+    height: 92px;
+    z-index: 3;
+}
+
+
+@media screen and (max-width: 500px) {
+    .two > span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .one .swiper-wrapper {
+        margin-left: 0;
+    }
+    .one .swiper-container {
+        bottom: 0;
+    }
+    .one,.two {
+        background-position-x: 50%;
+        background-position-y: 0;
+    }
+    .one .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        right: 2.5rem;
+    }
+    .one .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        left: 2.5rem;
+    }
+}

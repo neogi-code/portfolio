@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+/* 컨텐츠 */
+
+/* 인트로 */
+#intro .grid .gridItem:nth-of-type(2) {
+    position: relative;
+}
+#intro .grid .video {
+    width: 64.79166666666667%;
+    position: absolute;
+    top: 42.3%; left: 16.78%;
+}
+
+/* 벨류 */
+
+#value  .imgTitle {
+    width: 536.9375px;
+    padding-top: 60px;
+    margin: 60px auto 0;
+}
+#value .container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 72.5px;
+}
+#value .item h2 {
+    width: 257.375px;
+    margin: 40px 0 31.0625px;
+}
+#value .subTitle {
+    font-size: 26px;
+    margin: 25px 0 10px;
+}
+#value .subTitle:nth-of-type(2) {
+    margin-top: 75px;
+}
+#value .gifWrap {
+    display: flex;
+    justify-content: space-around;
+}
+#value .gif {
+    width: 30%;
+    box-shadow: 8px 8px 15px #b7b7b7;
+}
+#value .gif img {
+    padding-bottom: 33px;
+    background-color: #4e2531;
+}
+#value .gif .txtBox {
+    margin: 26.625px auto;
+    font-size: 17px;
+    text-align: center;
+}
+
+/* 크리에이트 */ 
+
+.bgWrap:first-of-type {
+    background: url(images/pattern03.png);
+    background-size: cover;
+}
+#create {
+    padding-bottom: 96.7375px;
+}
+#create > img {
+    width: 647.875px;
+    margin: 0 auto 59.90625px;
+    padding-top: 100px;
+}
+#create .grid {
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 프라이스 */
+
+#price {
+    background: url(images/게시판.png) no-repeat 50%;
+    background-size: contain;
+    width: 817.5px;
+    height: 1090px;
+    position: relative;
+}
+#price > h2 {
+    font-family: 'Cafe24Ohsquare', sans-serif;
+    font-size: 56px;
+    text-align: center;
+    padding: 125px 0 75px;
+}
+#price > * {
+    width: 688.5px;
+    margin: 0 auto;
+}
+#price .grid {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #816854;
+    border: 1px solid #816854;
+    grid-gap: 1px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+#price > span:first-of-type {text-align: right;}
+#price .grid:nth-of-type(2) {
+    margin: 18px auto;
+}
+#price .gridItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 9px 0;
+}
+#price .grid .gridItem:nth-of-type(2),
+#price .grid .gridItem:nth-of-type(3) {
+    background-color: #f9f9f9;
+}
+#price .gridTitle {
+    grid-row: 1/span 5;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    font-weight: bold;
+    font-size: 24px;
+}
+#price .gridTitle span {
+    font-size: 14px;
+}
+#price .grid:nth-of-type(2) .gridTitle:first-of-type {
+    grid-row: 1/span 9;
+}
+#price .colspan {
+    grid-row: span 2;
+}
+#price .empty {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #cd9f68;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#price .epTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+#price .empty ul {
+    grid-column: 2/4;
+    padding: 15px 0 15px 30px;
+    list-style: square;
+    color: #000;
+}
+#price .empty li:first-of-type {
+    margin-bottom: 10px;
+}
+#price .empty li::marker {
+    color: #cd9f68;
+}
+#price > span {
+    display: block;
+    font-size: 14px;
+    line-height: 1.6;
+}
+#price > span:nth-of-type(2) {
+    margin-top: 25px;
+}
+#price > img {
+    position: absolute;
+    z-index: 99;
+}
+#price > .left {
+    width: 400px;
+    top: 13%; left: -18%;
+    box-shadow: #000;
+}
+#price > .right {
+    width: 300px;
+    bottom: -60px; right: -13%;
+}
+
+/* 세일즈 */
+
+.bgWrap:nth-of-type(2){
+    background-color: #dbc3b0;
+}
+.sales {
+    width: 852px;
+    margin: -545px auto 0;
+    padding-top: 625px;
+    display: flex;
+    flex-direction: column;
+}
+.sales h2 {
+    padding: 26.625px 0;
+    text-align: center;
+    background: url(images/title_pattern.png) no-repeat 0 0;
+    background-size: cover;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.sales h2 span {
+    color: #ffc71d;
+}
+.sales .imgWrap {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 57.6875px;
+    box-shadow: 3px 3px 20px #9c886c;
+}
+.sales img {
+    width: 40%;
+}
+.sales > span {
+    text-align: right;
+    margin: 15px 0 51.03125px;
+}
+
+/* 큐엔에이 */
+
+.bgWrap:nth-of-type(2) ~ section > h2 {
+    font-family: 'Cafe24Ohsquare',sans-serif;
+    font-size: 62px;
+    text-align: center;
+    padding: 75.4375px 0;
+    font-weight: bold;
+}
+
+/* 컨텍트 */
+
+#contact li {
+    display: flex;
+    margin-bottom: 15px;
+}
+#contact li > label {
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+}
+#contact .fill {
+    display: inline-block;
+    width: 70%;
+}
+#contact input,
+#contact select {
+    padding: 11px 0;
+    text-indent: 15px;
+}
+#contact #offline {
+    margin-left: 55px;
+}
+#contact #date {
+    text-indent: 8px;
+}
+#contact #suggest {
+    height: 135.7875px;
+    padding: 15px;
+}
+#contact #location {
+    padding: 8.5px 0;
+    vertical-align: top;
+}
+#contact ul ~ span {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-left: 30%;
+    text-indent: 15px;
+    color: #999;
+}
+#contact .terms {
+    margin-left: 30.5%;
+    color: #de3232;
+}
+#contact .terms span {
+    display: inline-block;
+    margin: 26.625px 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#contact .terms img {
+    display: none;
+}
+#submit {
+    width: 250px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #3d0717;
+    border-radius: 30px;
+    margin: 60px auto;
+    display: block;
+    cursor: pointer;
+    overflow: unset;
+    border: none;
+}
+
+/* 모바일 */
+
+@media screen and (max-width:500px) {
+    section {
+        width: 100%;
+    }
+    #value .container {
+        padding-bottom: 40px;
+    }
+    #value .grid {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #value .container {
+        width: 100%;
+    }
+    #value .imgTitle {
+        width: 60%;
+        padding-top: 28px;
+        margin: 0 auto;
+    }
+    #value .imgTitle ~ .wrap .imgTitle {
+        width: 100%;
+    } 
+    #value .subTitle {
+        font-size: 16px;
+        margin: 12px 10px 10px;
+    }
+    #value .subTitle:nth-of-type(2) {
+        margin: 30px 0 10px 10px;
+    }
+    #value .item h2 {
+        width: 40%;
+        margin: 25px 10px 0;
+    }
+    #value .item:first-of-type ~ .item h2 {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    #value .item:nth-of-type(2),
+    #value .item:nth-of-type(3) {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #value .gifWrap {
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #value .gif {
+        width: 90%;
+        box-shadow: 3px 3px 15px #b7b7b7;
+        margin-bottom: 10px;
+    }
+    #value .gif .txtBox {
+        font-size: 18px;
+        margin: 25px 0;
+        -webkit-transform: scale(.9);
+    }
+    #create > img {
+        width: 92%;
+        margin-bottom: 40px;
+        padding-top: 50px;
+    }
+    #create .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    #price {
+        width: 95%;
+        background-size: cover;
+    }
+    #price > * {
+        width: 95%;
+    }
+    #price > h2 {
+        padding: 90px 0 0;
+        font-size: 40px;
+    }
+    #price > img {
+        display: none;
+    }
+    #price .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #price .gridTitle {
+        grid-row: unset;
+        grid-column: 1/3;
+        font-size: 18px;
+    }
+    #price .empty {
+        grid-template-columns: 1fr;
+    }
+    #price .epTitle {
+        grid-column: 1/4;
+        font-size: 18px;
+        padding: 5px;
+    }
+    #price > span {
+        font-size: 11px;
+    }
+    .sales {
+        width: 95%;
+        padding-top: 590px;
+    }
+    .sales h2 {
+        font-size: 32px;
+    }
+    .sales .imgWrap {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .sales img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sales > span {
+        font-size: 12px;
+    }
+    .bgWrap:nth-of-type(2) ~ section > h2 {
+        font-size: 32px;
+        padding: 40px 0 30px;
+    }
+    #qna > img {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #contact form {
+        font-size: 16px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #contact li > label {
+        font-size: inherit;
+    }
+    #contact input, #contact select {
+        padding: 5px 0;
+    }
+    #contact #location {
+        padding: 3px 0;
+    }
+    #contact #offline {
+        margin-left: 20px;
+    }
+    #contact .inWrap {
+        width: 70%;
+    }
+    #contact li:nth-of-type(5) .inWrap {
+        width: auto;
+    }
+    #contact #location {
+        margin-bottom: 8px;
+    }
+    #contact ul ~ span {
+        margin: 0;
+        display: block;
+        text-indent: unset;
+    }
+    #contact .terms {
+        margin-left: auto;
+    }
+}

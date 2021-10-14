@@ -1,0 +1,15 @@
+@charset "uft-8";
+
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 1024px;
+    margin: 0 auto;
+}
+a:focus,
+button:focus
+div:focus {
+outline: none;
+}

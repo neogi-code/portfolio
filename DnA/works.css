@@ -1,0 +1,589 @@
+@charset "utf-8";
+
+body.hide {
+    height: 100vh;
+    overflow: hidden;
+}
+main {
+    padding-top: 22rem;
+}
+
+/* 컨텐츠 포폴 ul */
+
+main  .lnb {
+    max-width: 1920px;
+    min-width: 347px;
+    width: 100%;
+    top: 76px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    font-size: 1.9rem;
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+}
+main .lnb li {
+    padding: 0 15px;
+    margin: 0 10px;
+    line-height: 60px;
+    font-weight: 500;
+    position: relative;
+}
+main .lnb a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #296bb5;
+    position: absolute;
+    left: 0; bottom: 0;
+    z-index: 99;
+    transition: .3s;
+}
+main .lnb li:hover a:after {
+    width: 100%;
+}
+
+/* 컨텐츠 정렬 */
+
+.content .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 150px;
+}
+.content .wrap:first-of-type {
+    padding: 0;
+}
+.content .txtBox > * {
+    font-size: 1.8rem;
+}
+.content .wrap .title {
+    margin: .2rem 0;
+}
+.content .wrap .label {
+    font-weight: 700;
+}
+.content .wrap .img {
+    position: relative;
+}
+.content .wrap .linked {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.content .wrap .linked:hover,
+.content .wrap .linked:active {
+    background-color: rgba(0, 0, 0, .5);
+}
+.content .wrap .linked span {
+    color: #fff;
+    font-size: 2rem;
+    border-bottom: 1px solid #fff;
+    opacity: 0;
+    transition: .3s;
+}
+.content .wrap .linked:hover span,
+.content .wrap .linked:active span {
+    opacity: 1;
+}
+
+
+/* 컨텐츠 이미지 */
+
+.content .pro .img{
+    max-width:803px;
+    width: 100vw;
+    height:558px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/promotion/main.png);
+}
+.content .logo .img{
+    width: 393px;
+    height: 560px;
+    background: url(http://revelyview.cdn3.cafe24.com/images/portfolio/logo/main.png) ,url(http://revelyview.cdn3.cafe24.com/images/pattern.png) 20%;
+    background-size: 100%;
+}
+.content .sns .img{
+    width: 393px;
+    height: 560px;
+    background: url(http://revelyview.cdn3.cafe24.com/images/portfolio/sns/main.png) ,url(http://revelyview.cdn3.cafe24.com/images/pattern.png);
+    background-size: 150%;
+}
+.content .leaflet .img{
+    width: 801px;
+    height: 561px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/leaflet/main.png);
+}
+.content .ppt .img{
+    width: 801px;
+    height: 556px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/ppt/main.png);
+}
+.content .bsCard .img{
+    width: 393px;
+    height: 560px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/business/main.png);
+}
+.content .illust .img{
+    width: 393px;
+    height: 560px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/illust/main.png);
+}
+.content .offline .img{
+    width: 805px;
+    height: 560px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/offline/main.png);
+}
+.content .online .img{
+    width: 393px;
+    height: 560px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/uiux/main.png);
+}
+.content .character .img {
+    width: 805px;
+    height: 569px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/character/main.png);
+}
+.content .emote .img {
+    width: 774px;
+    height: 792px;
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/portfolio/emote/main.png);
+}
+.content .akkomis .img {
+    width: 846px;
+    height: 611px;
+    background-image: url(images/akkomis/main.jpg);
+}
+.content .web .uiux .img {
+    width: 924px;
+    height: 710px;
+    background-image: url(images/ui_ux.jpg);
+}
+.content .web .app .img {
+    width: 706px;
+    height: 775px;
+    background-image: url(images/app_intro.jpg);
+}
+.content .web .shop .img {
+    width: 882px;
+    height: 696px;
+    background-image: url(images/reponsive-web.jpg);
+}
+.content .web .product .img {
+    width: 560px;
+    height: 712px;
+    background-image: url(images/ferrari_plugin.jpg);
+}
+.content .web .pension .img {
+    width: 894px;
+    height: 568px;
+    background-image: url(images/pension_intro.jpg);
+}
+.content .web .landing .img {
+    width: 720px;
+    height: 779px;
+    background-image: url(images/landing.png);
+}
+.content .web .event .img {
+    width: 749px;
+    height: 578px;
+    background-image: url(images/event.png);
+}
+/* 이미지 정렬 */
+
+.content .wrap:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+.content .wrap.flexEnd {
+    justify-content: flex-end;
+}
+.content .wrap.flexStart {
+    justify-content: flex-start;
+}
+.content .wrap .img {
+    background-size: cover;
+    background-position: 50%;
+}
+
+/* 텍스트 박스 위치 조절 */
+
+.logo .txtBox,
+.bsCard .txtBox,
+.online .txtBox {
+    margin-left: 87px;
+}
+.sns .txtBox,
+.illust .txtBox,
+.character .txtBox {
+    margin-right: 221px;
+}
+.tar {
+    text-align: right;
+}
+.video .txtBox {
+    min-width: 205px;
+}
+.web .right {
+    margin-left: auto;
+}
+.web .left {
+    margin-right: auto;
+}
+/* 팝업 */
+
+.content .popWrapper {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+.content .design .popWrapper .popUp {
+    max-width: 1450px;
+    width: 100%;
+    padding: 0 12.23958335%;
+    height: 904px;
+    margin: 20px 0;
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.popUp::-webkit-scrollbar,
+.video .right::-webkit-scrollbar,
+.scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+    scrollbar-width: none; /* firefox */
+}
+.content .design .popWrapper .popUp > * {
+    width: 31%;
+    float: left;
+    margin: 1%;
+}
+.content .design .popWrapper .akPop img {
+    width: 90%;
+    margin: 1% auto;
+    float: none;
+    display: block;
+}
+.content .design .popWrapper .akPop .imgWrap img{
+    width: 100%;
+    margin: 0;
+}
+.content .popWrapper .imgWrap {
+    display: flex;
+    flex-direction: column;
+}
+.content .design .popWrapper .akPop .imgWrap {
+    width: 23%;
+}
+.content .popWrapper .imgWrap img {
+    margin-bottom: 7%;
+    width: 100%;
+}
+.content .design .popWrapper .row {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.content .popWrapper .row img {
+    width: 31%;
+    margin-right: 2%;
+    margin-bottom: 0;
+}
+.content .popWrapper .halfWidth > .imgWrap {
+    width: 48%;
+}
+
+/* 영상 편집 이미지 */
+.content .video .popWrapper {
+    background-color: #fff;
+    height: 100vh;
+    display: none;
+}
+.content .video .popUp {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.content .video .youtube .img {
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/youtube.jpg);
+}
+.content .video .proVideo .img {
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/promotion.jpg);
+}
+.content .video .ad .img {
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/ad.jpg);
+}
+.content .video .event .img {
+    background-image: url(http://revelyview.cdn3.cafe24.com/images/event.jpg);
+}
+.content .video .img {
+    width: 935px;
+    height: 637px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+.content .video .popUp .right {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 0 auto;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+.content .video .videoWrap {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.content .videoContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+    /* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+    padding-top: 25px;
+    width: 100%;
+    height: 0;
+}
+.content .videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* video 레이아웃 좌측 영역 */
+
+.content .video .popWrapper .popUp .left {
+    min-width: 250px;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+}
+.content .video .popWrapper .close {
+    position: absolute;
+    right: 10px; top: 10px;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.content .video .popWrapper .close span {
+    display: block;
+    position: absolute;
+    top: 50%; left: 15%;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+.video .left .listWrap {
+    width: 80%;
+    margin: 107px auto 0;
+}
+.video .left h4 {
+    padding: 10px 13px;
+    border-bottom: 1px solid #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.video .left ul {
+    padding: 20px 0;
+}
+.video .left ul li {
+    font-size: 1.3rem;
+    padding-left: 13px;
+    padding-bottom: 3px;
+}
+
+/* 영상 레이아웃 조절 */
+
+@media screen and (max-width: 1668px) {
+    .content .video .videoWrap {
+        grid-template-columns: repeat(2, .45fr);
+        justify-content: space-around;
+    }
+}
+
+/* 태블릿 버전 */
+
+@media screen and (max-width: 1207px) {
+    .content {
+        margin-top: 1rem;
+    }
+    main .wrap,
+    .content .wrap:first-of-type,
+    .content .wrap:nth-of-type(even) {
+        flex-direction: column;
+    }
+    .content .wrap:first-of-type,
+    .content .wrap {
+        padding: 0 0 3rem 0;
+    }
+    .content .wrap .img {
+        max-width: 803px;
+        width: 100%;
+    }
+    .content .wrap .txtBox {
+        margin-bottom: 3rem;
+    }
+    .logo .txtBox, .bsCard .txtBox, .online .txtBox,
+    .sns .txtBox, .illust .txtBox, .character .txtBox {
+        margin: 0;
+    }
+    main .content .wrap.wrap.flexStart {
+        flex-direction: column-reverse;
+    }
+    .content .video .popUp {
+        flex-direction: column;
+    }
+    .content .video .popWrapper .popUp .left {
+        height: auto;
+        position: relative;
+    }
+    .content .video .popWrapper .close {
+        display: block;
+    }
+    .content .video .popWrapper .close span:nth-of-type(2) {
+        transform: rotate(135deg);
+    }
+    .video .left .listWrap {
+        margin: 4.143vw auto;
+    }
+    .content .right,
+    .content .left {
+        margin: 0;
+    }
+    .content .web {
+        width: 70%;
+        min-width: 803px;
+        margin: 0 auto;
+    }
+    .content .web .txtBox {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .content .right .videoWrap {
+        grid-template-columns: 1fr;
+    }
+    .content .web {
+        min-width: unset;
+        width: 100%;
+    }
+    .content .web .wrap {
+        width: 100%;
+    }
+    .content .web .wrap .img {
+        width: 100vw;
+    }
+    .content .web .txtBox {
+        margin-left: 3%;
+    }
+}
+
+/* web 이미지 높이 조절 */
+@media screen and (max-width: 803px) {
+    .content .web .uiux .img {
+        height: 76.837vw;
+        background-color: #28045b;
+    }   
+    .content .web .app .img {
+        height: 109.838vw;
+    }
+    .content .web .wrap .img {
+        height: 100vw;
+    }
+    .content .web .shop .img {
+        background-color: #f8f8f8;
+    }
+    .content .web .pension .img {
+        background-color: #dfdfdf;
+    }
+    .content .web .code .img {
+        background-color: #333645;
+    }
+}
+/* 모바일 버전 */
+
+@media screen and (max-width: 582px) {
+    main {
+        padding-top: 13rem;
+    }
+    main .lnb {
+        height: 10.309vw;
+    }
+    main .lnb li {
+        line-height: 10.309vw;
+        font-size: 1.4rem;
+    }
+    .content {
+        margin-top: 1.718vw;
+    }
+    .content .wrap:first-of-type, .content .wrap {
+        padding-bottom: 5.155vw;
+    }
+    .content .wrap .txtBox {
+        align-self: flex-start;
+        margin-bottom: 5.155vw;
+        transform: translateX(30%);
+    }
+    .content .wrap .txtBox > *{
+        font-size: 1.6rem;
+    }
+    .content .wrap .img {
+        height: 58.419vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .content .character .img {
+        background-position: 0 100%;
+    }
+    .content .design .popWrapper .popUp > * {
+        width: 95%;
+        float: none;
+        margin: 1% auto;
+        display: block;
+    }
+    .content .design .popWrapper .row {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .content .design .popWrapper .popUp img {
+        margin-bottom: 3%;
+    }
+    .content .popWrapper .row img {
+        width: 100%;
+        margin: 1% 0;
+    }
+    .content .video .popUp .right {
+        width: 95%;
+        padding: 20px .8vw;
+    }
+    .content .video .right .videoWrap {
+        width: 100%;
+    }
+}

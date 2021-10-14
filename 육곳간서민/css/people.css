@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+header .pe {
+    color: #d71921;
+}
+.one {
+    background-image: url(../images/people.JPG);
+    background-size: 68%;
+    background-position-x: 50%;
+    position: relative;
+}
+.one h2 {
+    font-size: 5.7rem;
+    color: #fff;
+    position: absolute;
+    bottom: 37rem; left: 50%;
+    transform: translate(-50%);
+    line-height: 1.3;
+}
+.one .swiper-container {
+    width: 100%;
+    position: absolute;
+    bottom: 5%; left: 0;
+    z-index: 9;
+}
+.one .swiper-wrapper {
+    margin-left: 14rem;
+}
+.one .swiper-slide {
+    width: 445px;
+}
+.one .arrow {
+    width: 4.6rem;
+    height: 4.6rem;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    transform: rotate(180deg);
+}
+.one .arrow::after {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.one .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: .6;
+}
+.one .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: auto;
+    right: 3.2rem;
+}
+.one .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: auto;
+    left: 3.2rem;
+}
+.two .swiper-container:nth-of-type(4) .txtWrap p {
+    margin-left: 12rem;
+}
+.two .swiper-container:nth-of-type(4) .txtWrap h4::after {
+    width: 70%;
+    left: 51%;
+}
+
+@media screen and (max-width: 500px) {
+
+    .one {
+        background-position-y: 30%;
+        background-size: contain;
+    }
+    .one h2 {
+        width: 100%;
+        font-size: 3.6rem;
+        bottom: auto;
+        top: 40rem;
+        text-align: center;
+    }
+    .one .swiper-wrapper {
+        margin-left: 0;
+    }
+    .one .swiper-slide {
+        width: 100%;
+    }
+    .main .two .swiper-container:nth-of-type(4) .txtWrap p {
+        margin: 0 auto;
+    }
+    .two .swiper-container:nth-of-type(4) .txtWrap h4::after {
+        width: 93%;
+    }
+}

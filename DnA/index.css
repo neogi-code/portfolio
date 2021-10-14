@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+/* 메인 콘텐츠 */
+/* vide banner */
+.swiper-container {
+    height: 957px;
+    z-index: -99;
+}
+.swiper-slide {
+    position:relative;
+    overflow: hidden;
+}
+.swiper-slide .video {
+    width:1207px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+.swiper-slide .txtBox {
+    position: absolute;
+    left: 37.1354166%; top: 30%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 800px;
+    opacity: 0;
+}
+.swiper-slide.swiper-slide-active .txtBox {
+    opacity: 1;
+    transition: .6s;
+}
+.swiper-slide h2 {
+    font-size: 7.2rem;
+    font-weight: 700;
+}
+.swiper-slide .txt {
+    font-size: 2.4rem;
+    margin: 0;
+}
+/* content */
+#contents {
+    max-width: 1306px;
+    margin: 0 auto;
+    padding-top: 13.137vw;
+    margin-top: 30px;
+    overflow: hidden;
+}
+#contents > h2 {
+    font-size: 4.4rem;
+    font-weight: 700;
+    position: relative;
+}
+#contents > h2:after {
+    content: "What we do";
+    position: absolute;
+    left: 2px; top: -30px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #a9a9a9;
+}
+#contents > .wrap:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    align-content: end;
+    margin-top: 100px;
+}
+#contents .design {
+    background-image: url(images/dna.png);
+}
+#contents .character {
+    /* height: 410px; */
+    background-image: url(images/character.png);
+}
+#contents .video {
+    /* height: 510px; */
+    background-image: url(images/about_img02.png);
+}
+#contents .web {
+    /* height: 610px; */
+    background-image: url(images/web.png);
+}
+#contents > .wrap:first-of-type > div {
+    width: 284px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+    margin-top: auto;
+    height: 506px;
+}
+/* #contents > .wrap:first-of-type > div::before,
+#contents > .wrap:first-of-type > div::after {
+    content: "";
+    width: 2px;
+    height: 300%;
+    background-color: #f3f2f3;
+    position: absolute;
+    bottom: 0;
+    z-index: -999;
+} */
+#contents > .wrap:first-of-type > div::before {
+    left: 0;
+}
+#contents > .wrap:first-of-type > div::after {
+    right: 0;
+}
+#contents a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+#contents a span {
+    opacity: 0;
+    transition: .3s;
+    color: #fff;
+    position: relative;
+}
+#contents a span::after {
+    content:"";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0; bottom: -2px;
+    background-color: #fff;
+}
+#contents a:hover,
+#contents a:active {
+    background-color: rgba(0,0,0,.5);
+}
+#contents a:hover span,
+#contents a:active span {
+    opacity: 1;
+}
+
+/* content black area */
+
+#contents > .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10.417vw;
+}
+#contents .bgc {
+    width: 396px;
+    height: 448.56px;
+    background: url(http://revelyview.cdn3.cafe24.com/images/bgi_D.png) no-repeat 27% 300px fixed, #000;
+    position: relative;
+}
+#contents .txtBox {
+    color: #fff;
+    width: 263px;
+    position: absolute;
+    bottom: 135px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+}
+#contents .txtBox h2 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#contents .videoWrap  {
+    width: 753px;
+    /* height: 512px; */
+    align-self: flex-end;
+}
+#contents .videoContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율인 경우 */
+    /* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+    padding-top: 25px;
+    width: 100%;
+    height: 0;
+}
+#contents .videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    margin: 240px 0 0 auto;
+}
+/* 태블릿 버전 */
+
+@media screen and (max-width: 1207px) {
+    #content #banner {
+        width: 100%;
+    }
+    .swiper-slide .video {
+        width: 100%;
+    }
+    .swiper-slide .txtBox {
+        width: 66.280vw;
+        transform: translateX(-20%);
+        color: #fff;
+        text-shadow: 2px 3px 1px #000;
+    }
+    .swiper-slide .txtBox h2 {
+        font-size: 5.2rem;
+    }
+    #contents > h2 {
+        left: 5%;
+        font-size: 3.6rem;
+    }
+    #contents > .wrap:first-of-type {
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+    }
+    #contents > .wrap:first-of-type > div {
+        margin-bottom: 2.627vw;
+    }
+    #contents > .wrap:first-of-type .character {
+        margin-top: 0;
+    }
+    #contents .flex {
+        flex-direction: column;
+    }
+    #contents .bgc {
+        width: 100%;
+        height: 50rem;
+    }
+    #contents .videoWrap {
+        width: 100%;
+    }
+    #contents .txtBox {
+        left: 80%;
+    }
+}
+
+/* 모바일 버전 */
+
+@media screen and (max-width: 582px) {
+    #banner .swiper-slide .txtBox {
+        width: 80%;
+        transform: translateX(-35%);
+    }
+    #contents > h2 {
+        font-size: 3.2rem;
+        width: 95%;
+    }
+    #contents > .wrap:first-of-type {
+        grid-template-columns: 1fr;
+        grid-gap: 1.2rem;
+    }
+    #contents > .wrap:first-of-type > div {
+        width: 95%;
+        height: 50vw;
+    }
+    #contents .bgc .txtBox {
+        transform: translateX(-90%);
+    }
+}

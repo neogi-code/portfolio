@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* 컨텐츠 */
+
+/* 인트로 */
+
+.intro {
+    display: flex;
+}
+.intro .container {
+    width: 800px;
+    height: 426px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+/* 인트로 스와이퍼 */
+
+.intro .swiper-container {
+    width: 586px;
+    height: 426px;
+}
+.arrow {
+    width: 27px;
+    height: 27px;
+}
+.swiper-button-prev {
+    background: url(images/left.png) no-repeat 50%;
+    background-size: cover;
+}
+.swiper-button-next {
+    background: url(images/right.png) no-repeat 50%;
+    background-size: cover;
+}
+.arrow:after {
+    content: unset;
+}
+/* 텍스트 이미지 */
+
+.intro .container > img {
+    width: 192px;
+    /* height: 426px; */
+}
+
+/* 텍스트 공통 */
+
+.txtBox {
+    text-align: center;
+    line-height: 1.4;
+    margin: 52px 0 25px;
+}
+.txtBox p {
+    font-size: 1.325rem;
+    color: #707070;
+}
+.txtBox h2 {
+    font-size: 2.9333rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.txtBox h2 span {
+    font-weight: 700;
+}
+.color  {
+    color: #5bc4d9;
+}
+/* 프로그램 */
+
+.program .gridBox {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    gap: 8px;
+}
+.program .gridItem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+.program .gridItem:first-of-type {
+    background-image: url(images/허벅지295.png);
+}
+.program .gridItem:nth-of-type(2) {
+    background-image: url(images/팔복허벅지.png);
+}
+.program .gridItem:nth-of-type(3) {
+    background-image: url(images/하체완성.png);
+}
+.program .gridItem:nth-of-type(4) {
+    background-image: url(images/상체완성.png);
+}
+.program .gridItem:nth-of-type(5) {
+    background-image: url(images/전신완성.png);
+}
+.program .gridItem:nth-of-type(6) {
+    background-image: url(images/밴스_옴므.png);
+}
+.program .gridItem:nth-of-type(7) {
+    background-image: url(images/q&a.png);
+}
+.program .gridItem:last-of-type {
+    background-image: url(images/프라이빗.png);
+}
+.program .gridItem a {
+    transition: .3s;
+}
+.program .gridItem:hover a,
+.program .gridItem:active a {
+    background-color: rgba(0,0,0,.5);
+}
+.swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background-color: #000;
+}
+.program .gridItem.column {
+    grid-row: 1/ span 2;
+    grid-column-start: 3;
+}
+
+/* 장점 */
+
+.strength .gridBox {
+    width: 800px;
+    height: 246px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 9px;
+}
+/* 마무리 */
+
+.end > .img {
+    width: 1024px;
+    background-color: #999;
+    margin-top: 53px;
+}
+.end .linked {
+    width: 1024px;
+    height: 96px;
+    background-color: #202020;
+    position: relative;
+}
+.end .linked:after {
+    content: "";
+    width: 1px;
+    height: 62px;
+    background-color: #000;
+    position: absolute;
+    left: 50%; top: 17px;
+    transform: translateX(-50%);
+}
+.end .wrap {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.end a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+}
+.end a:last-of-type {
+    letter-spacing: -.65px;
+    line-height: 1.2;
+}

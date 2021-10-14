@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* 초기화값 */
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+body > .container {
+    width: 375px;
+    box-shadow: 0px 8px 8px #e6e6e6;
+    margin: 0 auto;
+}
+h1,h2,h3,p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; 
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+/* 헤더 */
+
+header {
+    width: 100%;
+    max-width: 375px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.headWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header .hamberger {
+    margin-left: 13px;
+    width: 32px;
+    height: 18px;
+    background: url(images/hamberger.png) no-repeat 0 0;
+}
+header .search {
+    width: 30px; height: 30px;
+    background: url(images/search.png) no-repeat 0 0;
+    margin-right: 20px;
+}
+header .gnb {
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+/* 컨텐츠 */
+
+.container {
+    padding-bottom: 13rem;
+}
+main {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+main h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 4rem 0 2.5rem;
+}
+main  .lnb{
+    width: 100%;
+    padding: .8rem 1.4rem ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 700;
+    border: 2px solid #e4e3e3;
+    margin-bottom: 3rem;
+    background: url(images/icon_dropdown.png) no-repeat 95% 50%;
+}
+select{
+    appearance: none;
+    -moz-appearance: none; /* Firefox */ 
+    -webkit-appearance: none; /* Safari and Chrome */
+  }
+  
+  /* IE 기본 스타일 제거 */
+  select::-ms-expand{
+      display: none; /* IE 10, 11 */
+  }
+
+main .box {
+    padding: 1.8rem;
+}
+main .box h3 {
+    font-size: 1.6rem;
+    background: url(images/icon_location.png) no-repeat 100%;
+}
+main .gridBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.8rem;
+}
+main .gridBox .address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    padding: 1rem 0;
+    border-top: 1px solid #2e2e2e;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+main .gridBox .address > span:first-of-type {
+    grid-column: 1/3;
+    color: #2e2e2e;
+}
+main .box .address span:first-of-type ~ span{
+    text-indent: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main .gridBox .gridItem {
+    box-shadow: 0px 5px 5px #f7f7f7 ;
+}
+main .box address span {
+    font-size: 1.1rem;
+}
+main .gridBox .address .time {
+    background: url(images/clock.png) 5px 1px;
+}
+main .gridBox .address .tel {
+    background: url(images/tell.png) 5px 0;
+}
+main .gridBox .linkBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+main .gridBox .linkBox a {
+    padding: .8rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-position: 2.5rem 50%;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    text-indent: 1.7rem;
+}
+main .gridBox .linkBox .call {
+    background-image: url(images/icon_call.png);
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-size: 1.4rem;
+}
+main .gridBox .linkBox .reserve {
+    text-indent: 17px;
+    background-color: #38ce72;
+    color: #fff;
+    background-image: url(images/icon_naver.png);
+}
+
+/* 푸터 리스트 */
+
+table {
+    margin: 3rem auto 0;
+}
+table td {
+    width: 3.3rem;
+    height: 3.3rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #dad7d7;
+    text-align: center;
+    cursor: pointer;
+}
+table td:first-of-type,
+table td:last-of-type {
+    background: url(images/prev.png) no-repeat 50%;
+}
+table td:last-of-type {
+    transform: rotate(180deg);
+}
+table td.focus {
+    font-weight: 700;
+    position: relative;
+}
+table td.focus::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #202940;
+    position: absolute;
+    bottom: 0; left: 0;
+}

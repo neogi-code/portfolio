@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+header .wo {
+    color: #d71921;
+}
+.one {
+    background: url(../images/workBg.png) no-repeat 0;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one h2 {
+    font-family: 'century gothic',sans-serif;
+    font-size: 8.1rem;
+}
+.one p {
+    font-size: 3.4rem;
+    margin-top: 4.2rem;
+    line-height: 1.47;
+}
+.swiper-container .txtWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+}
+.swiper-container .txtWrap p {
+    margin: 0;
+}
+.two .swiper-container h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    padding: 3.5rem 0 3.2rem;
+    margin: 0 0 2rem;
+}
+.two .swiper-container h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+.two .swiper-container p {
+    font-size: 1.8rem;
+    margin: 0 0 15rem 15rem;
+}
+.two .swiper-container h3::before {
+    content: '"';
+}
+.two .swiper-container h3::after {
+    content: '"';
+}
+.two .swiper-container h4::after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background-color: #535353;
+    position: absolute;
+    bottom: 0;left: 50%;
+    transform: translateX(-50%);
+}
+.two .swiper-container:first-of-type .txtWrap p {
+    margin-bottom: 17.9rem;
+}
+.ca {
+    width: 600px;
+}
+
+@media screen and (max-width: 500px) {
+    .one {
+        background-image: url(../images/about4_m.jpg);
+        justify-content: flex-end;
+    }
+    .one h2 {
+        font-size: 5.8rem;
+    }
+    .one p {
+        font-size: 2.5rem;
+        margin-bottom: 40vw;
+        font-weight: bold;
+    }
+    .ca {
+        width: 100%;
+    }
+    .ca li {
+        width: 50%;
+    }
+    .two .swiper-container p {
+        margin: 0;
+        margin-left: 8rem;
+    }
+    .two .swiper-container:first-of-type .txtWrap p {
+        margin-bottom: 0;
+    }
+    .two .swiper-container:first-of-type h4::after {
+        width: 70%;
+    }
+    .two .swiper-container:first-of-type .txtWrap {
+        padding: 0;
+    }
+}

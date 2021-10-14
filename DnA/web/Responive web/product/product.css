@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/**** 상품 ****/
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 196px;
+}
+.img {
+	width: 60%;
+	height: 910px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.img img {
+	width: 70%;
+}
+.right {
+	width: 40%;
+}
+.price {
+	width: 80%;
+	display: flex;
+	flex-flow: column wrap;
+	margin: 0 auto;
+}
+.price > h2 {
+	font-size: 24px;
+	font-weight: normal;
+}
+.price > div > p {
+	font-weight: 700;
+}
+.flexwrap {
+	display: flex;
+}
+.flexwrap > ul {
+	display: flex;
+	width: 40%;
+}
+.flexwrap .grade {
+	width: 80px;
+	margin-right: .5rem;
+}
+.price .review li:nth-of-type(odd) a{
+	border-right: 1px solid #dddddd;
+}
+.grade > li {
+	width: 15px;
+	height: 15px;
+	background: url(images/star.png) no-repeat;
+	background-size: cover;
+}
+.review {
+	font-size: 12px;
+}
+.review a {
+	padding: 5px 10px;
+}
+#color .choice li {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+#color .choice li:first-child{
+	background-color: lightblue;
+}
+#sizePick #size {
+	height: 130px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-between;
+	text-transform: uppercase;
+	font-size: 12px;
+
+}
+#sizePick #size li {
+	width: 30%;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #000;
+	line-height: 1;
+}
+#sizePick #size li.select {
+	background-color: #000;
+	color: #fff;
+}
+#sizePick #size li:hover {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+.price #number {
+	width: 40px;
+	outline: none;
+}
+.price #order {
+	border: 1px solid #ddd;
+	background-color: #000;
+	color: #fff;
+	outline: none;
+	padding: 8px 5px;
+	font-size: 14px;
+	margin: 20px 0 60px;
+}
+.price #order:hover {
+	cursor: pointer;
+	background-color: rgba(0,0,0,.8);
+}
+.detail {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	position: relative;
+}
+.detail > h2 {
+	padding: 15px;
+	margin: 0;
+	font-size: 1rem;
+	cursor: pointer;
+	background-color: transparent;
+	position: relative;
+	z-index: 999;
+}
+.detail .arrow {
+	width: 20px;
+	height: 20px;
+	display: block;
+	top: 17px;
+}
+.detail > .slideUp {
+	padding: 0 15px;
+	font-weight: 300;
+	font-size: 15px;
+	display: none;
+}
+.detail .prodetail {
+	list-style: circle;
+	padding: 15px;
+	margin: 0;
+}
+/**** 상품정보 ****/
+.morewrap {
+	margin-top: 4rem;
+	margin-bottom: 5rem;
+	width: 100%;
+	padding: 15px;
+	border-top: 1px solid #000;
+	display: flex;
+}
+.morewrap h4 {
+	margin: 1rem 0;
+}
+.morewrap p {
+	font-size: 14px;
+}
+.more {
+	width: 30%;
+	text-indent: 2rem;
+}
+.subdetail {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: justify;
+}
+.subdetail .grade {
+	display: flex;
+}
+.other {
+	margin-bottom: 80px;
+}
+.other h2 {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.other #otherRec {
+	display: flex;
+	justify-content: space-around;
+}
+.other #otherRec li {
+	width: 23.95833333%;
+}
+
+@media screen and (max-width: 415px) {
+	.content {
+		flex-direction: column;
+		padding-top: 90px;
+	}
+	.content > div {
+		width: 100%
+	}
+	.img {
+		height: auto;
+	}
+	.img img {
+		width: 100%;
+	}
+	.morewrap {
+		flex-direction: column;
+	}
+	.more {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 10px;
+	}
+	.more .wrap .box {
+		width: 33.3333%;
+	}
+	.subdetail {
+		width: 100%;
+	}
+	.other #otherRec {
+		flex-wrap: wrap;
+	}
+	.other #otherRec li {
+		width: 40%;
+		margin: 20px 0;
+	}
+
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap: http://dna-jeju.com/sitemap.xml

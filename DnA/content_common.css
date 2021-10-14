@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* 메인 공통 */
+
+main .wrap {
+    width: 90%;
+    max-width: 1140px;
+}
+
+main .comSection h2 {
+    line-height: 125px;
+    font-weight: 900;
+    font-size: 3.2rem;
+    height: 125px;
+    text-align: center;
+}
+main .comSection .bgi {
+    background: url(http://revelyview.cdn3.cafe24.com/images/fixed_bgi.png) no-repeat 50% fixed;
+    background-size: cover;
+    height: 370px;
+}
+main .comSection .bgc {
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+}
+main .comSection .txt {
+    max-width: 527.77px;
+    width: 95%;
+}
+main .comSection p {
+    position: relative;
+    font-weight: 500;
+}
+main .comSection p::after {
+    content: '';
+    width: 55px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: -50px;
+    transform: translateX(-50%);
+}
+
+/* 컨텐츠 */
+
+main .content {
+    padding: 129px 0;
+}
+main section .wrap > h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;;
+}
+main section .wrap > h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+main section .wrap > p {
+    color: #939393;
+    font-size: 1.4rem;
+    margin-bottom: 100px;
+}
+main .secBgi {
+    width: 100%;
+    padding: 80px 0;
+    background: url(http://revelyview.cdn3.cafe24.com/images/bgi_pattern.png) no-repeat 30%,url(http://revelyview.cdn3.cafe24.com/images/fixed_bgi02.png) no-repeat 0 fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .secBgi .iconWrap {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+main .secBgi .icon {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+main .secBgi img {
+    width: 60%;
+}
+main .secBgi h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+main .secBgi p {
+    font-size: 1.4rem;
+}
+main section .mT {
+    margin-top: 80px;
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1207px){
+    main .secBgi .iconWrap {
+        width: 90%;
+    }
+    main .secBgi img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 825px){
+    main .secBgi .iconWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .secBgi .icon {
+        width: 50%;
+    }
+    main .secBgi img {
+        width: 100%;
+    }
+}
+/* 모바일 버전 */
+
+@media screen and (max-width: 582px) {
+    main .comSection h2 {
+        font-size: 2.4rem;
+    }
+    main .wrap {
+        width: 90%;
+    }
+    main section .wrap > h2 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+    }
+    main section .wrap > h3 {
+        font-size: 2rem;
+    }
+    main section .wrap > p {
+        font-size: 1.3rem;
+    }
+    .gallery .box .title {
+        font-size: 1.5rem;
+    }
+    main .secBgi .icon {
+        width: 80%;
+    }
+}

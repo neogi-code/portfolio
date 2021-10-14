@@ -1,0 +1,650 @@
+@charset "utf-8";
+
+/* 공통영역 */
+
+body {
+	line-height: 1.4;
+    text-align: center;
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+	font-size: 14px;
+}
+header{
+	height: 9.375vw;
+	z-index: 999;
+	position: relative;
+}
+h1,h2,h3,h4 {
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none; 
+	text-align: center;
+}
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+a:visited, a:link {
+	color: inherit;
+}
+img {
+    width: 100%;
+    vertical-align: top;
+}
+.container {
+	position: relative;
+	overflow: hidden;
+}
+.wrap {
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+/* 헤더 */
+
+header {
+	height: auto;
+	min-height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+header h1 {
+	background: url(../common/images/logo.png) no-repeat center;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+}
+header h1 a {
+	width: 100%;
+	height: 100%;
+	text-indent: -9999px;
+}
+header #user {
+	display: flex;
+	font-size: 0.714rem;
+	position: absolute;
+    right: 0; top: 0.938vw;
+    color: #777;
+}
+header #user a {
+	padding: 5px 10px;
+}
+header #user a:hover {
+    color: #000;
+}
+header .gnb {
+	display: flex;
+	width: 100%;
+}
+header .gnb > li {
+	width: 25%;
+	position: relative;
+}
+header .gnb > li.underline::after{
+	content: "";
+	width: 50%;
+	height: 2px;
+	background-color: #aaff;
+	position: absolute;
+	bottom: 12%; left: 50%;
+	transform: translateX(-50%);
+}
+header .gnb.fixed > li.underline::after {
+	bottom: 0; width: 100%;
+	background-color: #fff;
+}
+header .gnb p {
+	height: 60px;
+	text-transform: uppercase;
+}
+header .gnb p a {
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+}
+header .gnb ul {
+	width: 100%;
+	position: absolute;
+	display: none;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+header .gnb ul li a{
+	height: 50px;
+	line-height: 50px;
+}
+header .gnb ul li a:hover {
+	background-color: rgba(255,255,255,.5);
+	color: #000;
+}
+header .gnb.fixed {
+	position: fixed;
+	width: 100vw;
+    background-color: rgba(0,0,0,.5);
+    top: 0; left: 0;
+	transform: translate(0);
+	color: #fff;
+	z-index: 99999;
+}
+
+/* 햄버거 메뉴 */
+
+.hamberger {
+    display: none;
+	position: absolute;
+	top: 30%; right: 2vw;
+}
+.hamberger span {
+    display: block;
+    background: #000;
+    width: 42px;
+    height: 4px;
+    border-radius: 3px;
+    transition: 0.25s margin 0.25s, 0.25s transform;
+  }
+  .hamberger span:nth-child(1) {
+      margin-bottom: 8px;
+  }
+  .hamberger span:nth-child(3) {
+      margin-top: 8px;
+  }
+  .hamberger.active span {
+      transition: 0.25s margin, 0.25s transform 0.25s;
+  }
+  .hamberger.active span:nth-child(1) {
+    margin-top: 8px;
+    margin-bottom: -4px;
+      transform: rotate(45deg);
+  }
+  .hamberger.active span:nth-child(2) {
+      transform: rotate(45deg);
+  }
+  .hamberger.active span:nth-child(3) {
+    margin-top: -4px;
+      transform: rotate(135deg);
+  }
+
+
+
+/* 공통 배너 */
+.commonBanner {
+	padding-top: 80px;
+	width: 100vw;
+	height: 45vh;
+	position: relative;
+}
+.commonBanner .swiper-container,
+.commonBanner .swiper-wrapper,
+.commonBanner .swiper-slide {
+	width: 100%;
+	height: 100%;
+}
+.commonBanner .bg01 {
+	background-image: url(images/common_banner01.jpg);
+}
+.commonBanner .bg02 {
+	background-image: url(images/common_banner02.jpg);
+}
+.commonBanner .bg03 {
+	background-image: url(images/common_banner03.jpg);
+}
+.commonBanner .swiper-slide {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+.commonBanner .arrow {
+	position: absolute;
+	top: 50%;
+}
+.commonBanner .txt .title {
+	font-size: 34px;
+	margin-bottom: 10px;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: 1s 1s;
+}
+.commonBanner .txt span {
+	font-size: 24px;
+	display: block;
+	transform: translateY(50%);
+	opacity: 0;
+	transition: 1s 1.8s;
+}
+.commonBanner .swiper-slide-active .title,
+.commonBanner .swiper-slide-active span {
+	transform: translate(0);
+	opacity: 1;
+}
+
+/* 공통 컨텐츠 타이틀 */
+
+.content .breadCrumb {
+	width: 100vw;
+	height: 50px;
+	background-color: #000;
+}
+.content .wrap {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.content .breadCrumb .wrap {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.content .breadCrumb ul {
+	font-size: 13px;
+	display: flex;
+	color: #fff;
+	align-items: center;
+}
+.content .breadCrumb li {
+	position: relative;
+	margin-right: 30px;
+}
+.content .breadCrumb li:after {
+	content: ">";
+	position: absolute;
+	right: -40%;
+}
+.content .breadCrumb li:last-of-type:after {
+	content: none;
+}
+.content .contentTitle .title {
+	font-size: 36px;
+	padding: 30px 0;
+	text-align: center;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.content .main .menu {
+    display: flex;
+    justify-content: center;
+}
+.content .main .menu li {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px 30px;
+    background-color: #c3c5c7;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content .main .menu li.focus {
+    background-color: #eb4605;
+    color: #fff;
+}
+.content .cover {
+	width: 100%;
+}
+.content .cover > div {
+	display: none;
+	width: 100%;
+	max-width: 1300px;
+}
+.content .cover > div.focus {
+	display: block;
+}
+.content .cover > div .title {
+    font-size: 32px;
+    padding: 30px 0;
+    text-indent: 10px;
+    text-align: left;
+    border-bottom: 1px solid #c3c5c7;
+}
+.content .cover .box {
+    display: flex;
+    flex-direction: column;
+	padding: 20px;
+}
+.content .cover .flex {
+	display: flex;
+}
+
+/* 가격 테이블 */
+
+.content .main .price {
+    margin: 30px 0 80px 0;
+}
+.content .main .price table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content .main .price .title {
+    font-size: 32px;
+    text-align: left;
+    padding: 20px 0;
+}
+.content .main .price .title span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.content .main .price table th,
+.content .main .price table td {
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+}
+.content .main .price table .color {
+    background-color: rgb(245, 245, 245);
+}
+.content .main .price .small {
+	position: relative;
+}
+.content .main .price .small:after {
+	content: '2';
+	font-size: 8px;
+	position: absolute;
+	right: -6px; top: 0;
+}
+
+/* 가격 테이블 */
+
+.content .main .price {
+    margin: 30px 0 80px 0;
+}
+.content .main .price table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.content .main .price .title {
+    font-size: 32px;
+    text-align: left;
+	padding: 25px 0;
+	margin-top: 10px;
+}
+.content .main .price .title span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.content .main .price table th,
+.content .main .price table td {
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+}
+.content .main .price table .color {
+    background-color: rgb(245, 245, 245);
+}
+.content .main .price .struct th {
+    padding: 20px 80px;
+}
+
+/* 테이블 내 리스트 */
+
+.content .main .price ul {
+    margin-top: 25px;
+}
+.content .main .checked li {
+    padding: 4px 0;
+    text-align: left;
+    text-indent: 20px;
+    background: url(../common/images/checked.png) no-repeat 0 50%;
+    background-size: 15px;
+}
+
+/* 푸터 */
+/* bgi info area */
+
+.infoBar {
+	background: url(images/bgi03.jpg) fixed no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	width: 100%;
+	display: flex;
+	border: 1px solid #999;
+}
+.infoBar .wrap {
+	display: flex;
+	justify-content: space-around;
+}
+.infoBar .float {
+	width: 30%;
+	height: 252px;
+	margin: 55px 0;
+	opacity: 0;
+	transform: translateY(30%);
+}
+.inforBar .float img {
+    width: 22%;
+}
+.infoBar .float img {
+    width: 25%;
+}
+.infoBar .float a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	border-radius: 15%;
+}
+.infoBar .float a:hover {
+    background-color: rgba(0,0,0,.8);
+}
+.infoBar .float img {
+	margin: 20px auto;
+}
+.infoBar .wrap:nth-of-type(1) .float img {
+	margin-bottom: 10px;
+}
+.infoBar .float strong {
+	font-size: 1.429rem;
+}
+.infoBar .float span {
+	font-size: 0.929rem;
+	display: block;
+}
+.infoBar .float.move {
+	opacity: 1;
+	transform: translateY(0);
+}
+.infoBar .float.move:first-of-type {
+	transition: 1s .2s;
+}
+.infoBar .float.move:nth-of-type(2) {
+	transition: 1s .5s;
+}
+.infoBar .float.move:nth-of-type(3) {
+	transition: 1s .8s;
+}
+/* 하단gnb */
+.gnbWrap {
+	padding:20px 0 28px;
+}
+.footerGnb {
+	display: flex;
+}
+.footerGnb > li{
+	width: 16.6666%;
+	font-weight: bold;
+}
+.footerGnb li li {
+	height: 30px;
+	line-height: 30px;
+	font-size: 0.813rem;
+	font-weight: normal;
+	color: #777;
+}
+.footerGnb li li:hover {
+	color: #000;
+}
+.footerGnb p {
+	height: 45px;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+
+/* 지도 */
+
+.map iframe {
+	width: 100vw;
+	height: 250px;
+}
+
+/* 푸터 인포 */
+
+.info {
+	height: 112px;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+    color: #555;
+    padding-top: 30px;
+}
+.info a {
+    display: inline;
+    font-weight: bold;
+}
+.footInfo {
+	width: 30%;
+}
+.footInfo h3 {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+}
+.footInfo h3 ~ * {
+    font-size: 13px;
+    margin-bottom: 2.5px;
+}
+
+/* 푸터네비게이션 */
+
+.fnb ul {
+    width: 750px;
+    margin: 30px auto 4px;
+    display: flex;
+    justify-content: space-around;
+}
+.fnb ul, .copyright {
+    font-size: .75rem;
+}
+
+footer {
+    margin-bottom: 50px;;
+}
+
+/* 모바일 버전 */
+
+@media screen and (max-width: 1100px) {
+	.hamberger {
+		display: block;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+	}
+	header h1 {
+		position: unset;
+		width: 7.273vw;
+		height: 7.273vw;
+		min-width: 60px;
+		min-height: 60px;
+		transform: none;
+	}
+	header .gnb {
+		height: 0;
+		overflow: hidden;
+		transition: .25s;
+		flex-wrap: wrap;
+		transform: translateY(0);
+		background-color: rgba(0,0,0,.5);
+		color: #fff;
+		position: absolute;
+		top: 100%;
+	}
+	header .gnb.active {
+		height: 120px;
+	}
+	header .gnb > li {
+		width: 50%;
+	}
+	header .gnb > li.underline::after {
+		bottom: 0; width: 100%;
+		background-color: #fff;
+	}
+}
+@media screen and (max-width: 515px) {
+	header {
+		position: fixed;
+		background-color: #fff;
+	}
+	header .gnb.fixed {
+		position: absolute;
+		top: 100%;
+	}
+	.arrow {
+		display: none;
+	}
+	.infoBar .wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.infoBar .float {
+		width: 80%;
+		margin: 15px 0;
+	}
+	.footerGnb {
+		flex-wrap: wrap;
+	}
+	.footerGnb > li {
+		width: 33%;
+	}
+	.info {
+		width: 90%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: auto;
+	}
+	.footInfo {
+		width: 45%;
+	}
+	.footInfo:last-of-type {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.commonBanner .txt {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.commonBanner .txt .title {
+		font-size: 6.155vw;
+	}
+	.content .cover > div .title {
+		font-size: 24px;
+	}
+	.content .wrap {
+		width: 95%;
+	}
+	.content .cover > div {
+        position: unset;
+    }
+    .content .cover {
+        height: auto;
+    }
+	.content .main .price .title {
+		font-size: 28px;
+	}
+	.fnb ul {
+		width: 100%;
+		max-width: 750px;
+		flex-wrap: wrap;
+		line-height: 1.6;
+		margin-bottom: 15px;
+	}
+}

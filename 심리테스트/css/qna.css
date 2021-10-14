@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+#qna {
+    display: none;
+}
+.qBox {
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+}
+.answerList {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    border: 1px solid #000;
+}
+.answerList:hover,.answerList:focus {
+    background-color: #aaff;
+    color: #fff;
+    outline: none;
+}
+.status {
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .statusBar {
+    height: 100%;
+    border-radius: 20px;
+    background-color: #aaff;
+    transition: .6s;
+  }
+/* 애니메이션 */
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@keyframes fadeOut {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@-webkit-keyframes fadeOut {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+@-moz-keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@-moz-keyframes fadeOut {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+.fadeIn {
+    animation: fadeIn .6s;
+    -webkit-animation: fadeIn .6s;
+    -moz-animation: fadeIn .6s;
+}
+.fadeOut {
+    animation: fadeOut .6s;
+    -webkit-animation: fadeout .6s;
+    -moz-animation: fadeOut .6s;
+}

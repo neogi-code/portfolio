@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/**
+ * Minified by jsDelivr using clean-css v4.2.1.
+ * Original file: /npm/font-kopub@1.0.2/kopubdotum.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https:https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+ @font-face{font-family:'KoPub Dotum';font-style:normal;font-weight:300;src:url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Light.eot);src:url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Light.eot?#iefix) format('embedded-opentype'),url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Light.woff) format('woff'),url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Light.ttf) format('truetype')}@font-face{font-family:'KoPub Dotum';font-style:normal;font-weight:400;src:url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Medium.eot);src:url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Medium.eot?#iefix) format('embedded-opentype'),url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Medium.woff) format('woff'),url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Medium.ttf) format('truetype')}@font-face{font-family:'KoPub Dotum';font-style:normal;font-weight:700;src:url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Bold.eot?#iefix) format('embedded-opentype'),url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Bold.woff) format('woff'),url(https://cdn.jsdelivr.net/npm/font-kopub@1.0/fonts/KoPubDotum-Bold.ttf) format('truetype')}
+ /*# sourceMappingURL=/sm/fab701c5cb37d2965614c1e110a6247c25e8ac1650173b4d368c9a4a91e331bd.map */
+.container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: url(images/bgi1.png) no-repeat 0;
+    background-size: cover;
+    position: relative;
+  }
+  h1 {
+      margin: 0;
+      padding: 20px 0 0 32px;
+  }
+  h2 {
+    width: 537px;
+    height: 128px;
+    margin: 153px auto 64px;
+    font-family: 'KoPub Batang', serif;
+    font-size: 44px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f9cbff;
+  }
+  button {
+      display: block;
+    width: 418px;
+    height: 51px;
+    margin: 64px auto 12px;
+    border-radius: 26px;
+    background-color: #ccaed0;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'KoPub Dotum';
+    font-weight: bold;
+    font-size: 20px;
+  }
+  span {
+    display: block;
+    margin: 12px auto 0;
+    font-family: 'KoPub Dotum';
+    font-size: 14px;
+    opacity: 0.7;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  p {
+    width: 502px;
+    margin: 53px auto 40px;
+    font-family: 'KoPub Batang', serif;
+    font-size: 24px;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  .logo {
+    width: 130px;
+    height: 130px;
+    margin: 40px auto 50px;
+  }
+  ul {
+      width: 363.39px;
+      margin: 0 auto;
+      display: flex;
+      padding: 0;
+      list-style: none;
+      padding-bottom: 50px;
+  }
+  a {
+      color: inherit;
+      text-decoration: none;
+      padding: 0 30px;
+  }
+  li {
+    font-family: 'KoPub Dotum';
+    color: #fff;
+    font-weight: 500;
+  }
+  li:nth-of-type(2) {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+  }
+
+
+  @media screen and (max-width: 415px){
+    .container {
+        background-image: url(images/bgi2.png);
+    }
+    h1 {
+        padding: 19px 0 0 24px;
+    }
+    h1 img {
+        transform: scale(.8);
+    }
+    h2 {
+        width: auto;
+        height: 67px;
+        font-size: 24px;
+        margin-top: 121px;
+    }
+    button {
+        width: 174px;
+        height: 45px;
+        font-size: 16px;
+        margin: 40px auto 12px;
+    }
+    span {
+        font-size: 12px;
+    }
+    p {
+        width: auto;
+        font-size: 14px;
+        margin: 30px auto;
+    }
+    .logo {
+        transform: scale(.8);
+        margin: 30px auto;
+    }
+    ul {
+        width: 318.05px;
+        padding-bottom: 40px;
+    }
+    li {
+        font-size: 12px;
+    }
+  }

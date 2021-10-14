@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+.mBody {
+    margin: 0;
+}
+.mBody * {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.mBody ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.mBody a {
+    color: inherit;
+    text-decoration: none;
+}
+.pat {
+    position: absolute;
+    top: 0; left: 0;
+    padding: 0 120px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,.4);
+    z-index: 1;
+}
+.pat h1 img {
+    width: 80%;
+}
+.pat a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pat .gnb {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.pat .gnb li:nth-of-type(2) {
+    margin: 0 25px;
+}
+.pat .gnb li a {
+    padding: 30px 20px;
+    color: #fff;
+    position: relative;
+    display: inline;
+}
+.pat .gnb li a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    transition: .4s;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0; left: 0;
+}
+.pat .gnb li a:hover:after {
+    width: 100%;
+}
+.vdjs {
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.vdjs .TW {
+    padding-left: 120px;
+    color: #fff;
+}
+.vdjs .TW h2 {
+    font-size: 65px;
+}
+.vdjs .TW p {
+    font-size: 18px;
+}
+.fd {
+    display: flex;
+    flex-direction: column;
+}
+.fd li {
+    display: flex;
+    height: 650px;
+}
+.fd li .TB{
+    width: 50%;
+    padding: 0 7.8125vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: right;
+}
+.fd li .img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fd li:nth-of-type(1) .IMGWRAP {
+    background: linear-gradient( 170deg, #a7fdfa, #a6cbeb);
+}
+.fd li:nth-of-type(2) .IMGWRAP{
+    background: linear-gradient( 170deg, #6fb9fa, #372568);
+}
+.fd li:nth-of-type(3) .IMGWRAP{
+    background: linear-gradient( 170deg, #ddff8d, #64dcfe);
+}
+.fd li:nth-of-type(4) .IMGWRAP{
+    background: linear-gradient( 170deg, #a6f1fe, #453d90);
+}
+.fd li:nth-of-type(5) .IMGWRAP{
+    background: linear-gradient( 170deg, #ba6fef, #5f91a8);
+}
+.fd li:nth-of-type(6) .IMGWRAP{
+    background: linear-gradient( 170deg, #8babff, #3fdcde);
+}
+.fd li:nth-of-type(even) {
+    background-color: #bbcdfd;
+}
+.fd li:nth-of-type(even) span:last-of-type {
+    color: #787878;
+}
+.fd li .aImg {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.fd li .IMGWRAP img {
+    width: 80%;
+}
+.fd li .IMGWRAP {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+.fd li h2 {
+    margin: 10px 0 50px;
+    font-size: 45px;
+    position: relative;
+}
+.fd li h2::after {
+    content: "";
+    width: 20%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: -25px; right: 0;
+}
+.fd li span:last-of-type {
+    color: #aaa;
+}
+.ovs {
+    padding: 130px 0;
+}
+.ovs h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 50px 0;
+}
+.ovs .INNER {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.ovs .mson {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.ovs .mson div:nth-of-type(1) {
+    background-image: url(img/bg01.jpg);
+}
+.ovs .mson div:nth-of-type(2) {
+    background-image: url(img/bg02.jpg);
+}
+.ovs .mson div:nth-of-type(3) {
+    background-image: url(img/bg03.jpg);
+}
+.ovs .mson div:nth-of-type(4) {
+    background-image: url(img/bg04.jpg);
+}
+.ovs .mson div:nth-of-type(1),
+.ovs .mson div:nth-of-type(2) {
+    width: 25%;
+    height: 100%;
+}
+.ovs .mson div:nth-of-type(1).act,
+.ovs .mson div:nth-of-type(2).act {
+    width: 30%;
+}
+.ovs .mson div:nth-of-type(1).nact,
+.ovs .mson div:nth-of-type(2).nact {
+    width: 20%;
+}
+.ovs .mson div:nth-of-type(3).act,
+.ovs .mson div:nth-of-type(4).act  {
+    width: 60%;
+    height: 60%;
+}
+.ovs .mson div:nth-of-type(3).nact,
+.ovs .mson div:nth-of-type(4).nact {
+    width: 60%;
+    height: 40%;
+}
+.ovs .mson div:nth-of-type(3).act ~ div:nth-of-type(1),
+.ovs .mson div:nth-of-type(3).act ~ div:nth-of-type(2),
+.ovs .mson div:nth-of-type(4).act ~ div:nth-of-type(1),
+.ovs .mson div:nth-of-type(4).act ~ div:nth-of-type(2) {
+    width: 25%;
+}
+.ovs .mson div:nth-of-type(1).act ~ div:nth-of-type(3),
+.ovs .mson div:nth-of-type(1).act ~ div:nth-of-type(4),
+.ovs .mson div:nth-of-type(2).act ~ div:nth-of-type(3),
+.ovs .mson div:nth-of-type(2).act ~ div:nth-of-type(4) {
+    width: 50%;
+    height: 50%;
+}
+.ovs .mson div {
+    width: 50%;
+    height: 50%;
+    transition: .3s;
+}
+.ovs .mson a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    font-size: 24px;
+}
+.mBody footer {
+    background-color: #121212;
+    color: #989898;
+}
+.FWrap {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 40px 0;
+}
+.FWrap > * {
+    width: 50%;
+}
+.FWrap address{
+    font-style: unset;
+}
+.FWrap h3 {
+    text-align: center;
+    font-size: 28px;
+}
+.FWrap strong {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+}
+.FWrap .lkbtn {
+    width: 80%;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.FWrap .lkbtn li {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #333;
+    color: #f8f8f8;
+    border-radius: 50%;
+    line-height: 100px;
+    transition: .3s;
+}
+.FWrap .lkbtn li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.FWrap .lkbtn li:hover {
+    background-color: #f8f8f8;
+    color: #333;
+}
+.animate__animated {
+    --animate-duration: 1.5s;
+  }

@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1'>
+<title>reseve</title>
+<meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+<meta name='title' content=''>
+<meta name='desciption' content=''>
+<meta name='keyword' content=''>
+<meta property='og:title' content=''>
+<meta property='og:desciption' content=''>
+<meta property='og:image' content='http://이미지 경로(절대경로)'>
+<meta property='og:url' content='http://웹주소'>
+<link rel="stylesheet" href="../common/swiper.css">
+<link rel="stylesheet" href="../common/normalize.css">
+<link rel="stylesheet" href="../common/common.css">
+<link rel="stylesheet" href="reserve.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="../common/swiper-bundle-min.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+</head>
+<body>
+    <div class="container"><!-- 전체를 컨트롤 하는 div박스 -->
+        <header class="wrap"> <!-- 헤더 -->
+            <h1><a href="../index.html">logo</a></h1><!-- 로고 -->
+            <!-- <ul id="user">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">실시간 예약</a></li>
+            </ul> -->
+            <ul class="gnb"><!-- gnb -->
+                <li><p><a href="../pension/pension.html">pension</a></p><!-- 큰 메뉴 -->
+                    <!-- <ul>
+                        <li><a href="../pension/pension.html">팬션지기 인삿말</a></li>
+                        <li><a href="../pension/pension.html">오시는길</a></li>
+                    </ul> -->
+                </li>
+                <li><p><a href="../preview/priview.html">preview</a></p>
+                    <!-- <ul>
+                        <li><a href="../preview/priview.html">펜션 전경</a></li>
+                        <li><a href="../preview/priview.html">특별한 서비스</a></li>
+                    </ul> -->
+                </li>
+                <li><p><a href="../room/room.html">room</a></p>
+                    <!-- <ul>
+                        <li><a href="../room/room.html">일반룸</a></li>
+                        <li><a href="../room/room.html">특별룸</a></li>
+                        <li><a href="../room/room.html">파티룸</a></li>
+                        <li><a href="../room/room.html">2인룸</a></li>
+                        <li><a href="../room/room.html">다인룸</a></li>
+                    </ul> -->
+                </li>
+                <li class="underline"><p><a href="reserve.html">reservation</a></p></li>
+            </ul>
+            <div class="hamberger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <script>
+                $('.hamberger').click(function(){
+                    $(this).toggleClass('active');
+                    $('.gnb').toggleClass('active');
+                });
+            </script>
+        </header>
+        <!-- 공통 배너 -->
+        <div class="commonBanner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg01">
+                        <div class="txt">
+                            <p class="title">THIS MOMENT IS YOURS AND MY MEMORIES</p>
+                            <span>이 순간이 너와 나의 추억</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg02">
+                        <div class="txt">
+                            <p class="title">THIS MOMENT IS YOURS AND MY MEMORIES</p>
+                            <span>이 순간이 너와 나의 추억</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg03">
+                        <div class="txt">
+                            <p class="title">THIS MOMENT IS YOURS AND MY MEMORIES</p>
+                            <span>이 순간이 너와 나의 추억</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Add Arrows -->
+                 <div class="swiper-button-next arrow"></div>
+                 <div class="swiper-button-prev arrow"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentTitle">
+                <div class="breadCrumb">
+                    <div class="wrap">
+                        <ul>
+                            <li>RESERVATION</li>
+                            <li>예약안내</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="title">RESERVATION</p>
+            </div>
+            <div class="main wrap">
+                <div class="cover">
+                    <ul class="menu">
+                        <li class="focus">예약안내</li>
+                    </ul>
+                    <div class="reserveGuide focus">
+                        <p class="title">예약안내</p>
+                        <div class="price">
+                            <div class="roomPrice">
+                                <p class="title">객실비용안내<span>ROOM PRICE</span></p>
+                                <img src="images/m.png" alt="가격표" class="mob">
+                                <table>
+                                     <tr class="color">
+                                        <th rowspan="2">객실명</th>
+                                        <th rowspan="2"><span class="small">m</span></th>
+                                        <th rowspan="2">인원<br>(기준/최대)</th>
+                                        <th colspan="3">비수기요금</th>
+                                        <th colspan="3">준성수기요금</th>
+                                        <th colspan="3">성수기요금</th>
+                                     </tr>
+                                     <tr class="color">
+                                        <th>주중</th>
+                                        <th>주말</th>
+                                        <th>휴일</th>
+                                        <th>주중</th>
+                                        <th>주말</th>
+                                        <th>휴일</th>
+                                        <th>주중</th>
+                                        <th>주말</th>
+                                        <th>휴일</th>
+                                     </tr>
+                                     <tr>
+                                         <td>특별룸</td>
+                                         <td>50<span class="small">m</span></td>
+                                         <td>2/4명</td>
+                                         <td>90,000</td>
+                                         <td>130,000</td>
+                                         <td>130,000</td>
+                                         <td>100,000</td>
+                                         <td>140,000</td>
+                                         <td>140,000</td>
+                                         <td>150,000</td>
+                                         <td>150,000</td>
+                                         <td>150,000</td>
+                                     </tr>
+                                     <tr>
+                                        <td>일반룸</td>
+                                        <td>50<span class="small">m</span></td>
+                                        <td>2/4명</td>
+                                        <td>90,000</td>
+                                        <td>130,000</td>
+                                        <td>130,000</td>
+                                        <td>100,000</td>
+                                        <td>140,000</td>
+                                        <td>140,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>파티룸</td>
+                                        <td>50<span class="small">m</span></td>
+                                        <td>2/4명</td>
+                                        <td>90,000</td>
+                                        <td>130,000</td>
+                                        <td>130,000</td>
+                                        <td>100,000</td>
+                                        <td>140,000</td>
+                                        <td>140,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2인룸</td>
+                                        <td>50<span class="small">m</span></td>
+                                        <td>2/4명</td>
+                                        <td>90,000</td>
+                                        <td>130,000</td>
+                                        <td>130,000</td>
+                                        <td>100,000</td>
+                                        <td>140,000</td>
+                                        <td>140,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>다인룸</td>
+                                        <td>50<span class="small">m</span></td>
+                                        <td>2/4명</td>
+                                        <td>90,000</td>
+                                        <td>130,000</td>
+                                        <td>130,000</td>
+                                        <td>100,000</td>
+                                        <td>140,000</td>
+                                        <td>140,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                        <td>150,000</td>
+                                    </tr>
+                                </table>
+                                <p class="title">기본사항<span>Basics</span></p>
+                                <ul class="checked">
+                                    <li>예 약 방 법 : 1년 365일 언제나 예약이 가능합니다.<span>(실시간예약과 전화예약을 하실수 있습니다.)</span></li>
+                                    <li>주중요금적용 : 일요일~목요일, 공휴일 마지막일</li>
+                                    <li>주말요금적용 : 금, 토요일 및 공휴일 전일</li>
+                                    <li>성수기기준 : 여름성수기 → 7월 25일 ~ 8월 10일 까지 입니다.</li>
+                                </ul>
+                                <p class="title">유의사항<span>Notice</span></p>
+                                <ul class="checked">
+                                    <li><strong>예약후 12시간 이내에 미입금시 는 자동 취소 됩니다.</strong></li>
+                                    <li>최대인원 초과시 입실 및 환불이 불가합니다</li>
+                                    <li>객실 2개 이상 예약 시 예약은 사전 협의 후 예약하시기 바랍니다.</li>
+                                    <li>기준인원 초과시 1인에 10,000원이 추가 됩니다(유아 및 어린이포함)</li>
+                                    <li>입실시간은 오후 2시(성수기는 3시)부터입니다.</li>
+                                    <li>퇴실시간은 오전 12시 까지입니다.(여름성수기는 오전11시입니다.)</li>
+                                    <li>오후 10시 이후의 입실은 사전에 연락주시기 바랍니다.</li>
+                                    <li>미성년자는 보호자 동반없이 이용 하실 수 없습니다.</li>
+                                    <li>집기 파손시 펜션지기에게 알려주시기 바랍니다.</li>
+                                    <li>애완동물은 타객실 및 손님을 위해 입실을 금하오니 양해 바랍니다.</li>
+                                    <li>밤 11시 이후의 바베큐시설 이용 및 고성방가는 타 객실 손님을 <span>위하여 금하오니 양해 바랍니다.</span></li>
+                                </ul>
+                                <p class="title">환불기준<span>Refund Criteria</span></p>
+                                <ul class="checked">
+                                    <li>예약 후 취소 시에는 10% 위약금이 있습니다</li>
+                                    <li>예약날짜 변경은 취소시와 같은 위약금이 적용됩니다.</li>
+                                    <li>예약을 하실 경우에는 신중히 결정하여 주시길 부탁드립니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer><!-- 푸터 -->
+            <div class="infoBar"><!-- bgi info area -->
+                <div class="wrap">
+                    <div class="float">
+                        <a href="#">
+                            <img src="../common/images/footerLogo.png" alt="Logo" class="scale25">
+                            <strong>Revelyview</strong><span>SINCE 2019</span>
+                        </a>
+                    </div>
+                    <div class="float">
+                        <a href="tel:010-6662-8252">
+                            <img src="../common/images/call.png" alt="call" style="width: 22%;">
+                            <strong>010-6662-8252</strong>
+                            <span>AM 10:00 ~ PM 7:00</span><span>언제나 상담문의 주세요</span>
+                        </a>
+                    </div>
+                    <div class="float">
+                        <a href="reserve.html">
+                            <img src="../common/images/clock.png" alt="clock" style="width: 22%;">
+                            <strong>예약안내</strong>
+                            <span>1년 365일 언제나 예약이 가능합니다</span><span>예약관련 정보와 유의사항 등을 알 수 있습니다.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap gnbWrap">
+                <ul class="gnb footerGnb"><!-- 하단 gnb -->
+                    <li><p><a href="../pension/pension.html">pension</a></p><!-- 큰 메뉴 -->
+                        <ul><!-- lnb -->
+                            <li><a href="../pension/pension.html">팬션지기 인삿말</a></li>
+                            <li><a href="../pension/pension.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><p><a href="../preview/priview.html">preview</a></p>
+                        <ul>
+                            <li><a href="../preview/priview.html">펜션 전경</a></li>
+                            <li><a href="../preview/priview.html">특별한 서비스</a></li>
+                        </ul>
+                    </li>
+                    <li><p><a href="../room/room.html">room</a></p>
+                        <ul>
+                            <li><a href="../room/room.html">룸</a></li>
+                        </ul>
+                    </li>
+                    <li><p><a href="#">around</a></p>
+                        <ul>
+                            <li><a href="">주변 관광지</a></li>
+                        </ul>
+                    </li>
+                    <li><p><a href="reserve.html">reservation</a></p>
+                        <ul>
+                            <li><a href="reserve.html">예약안내</a></li>
+                        </ul>
+                    </li>
+                    <li><p><a href="#">community</a></p>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이용후기</a></li>
+                            <li><a href="#">이용문의</a></li>
+                            <li><a href="#">포토앨범</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="map"><!-- 지도 -->
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663.3176867895818!2d126.5212120836047!3d33.51086257895128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350ce4aaba22ee97%3A0xa8ffb23e146380c1!2z7KCc7KO87Yq567OE7J6Q7LmY64-EIOygnOyjvOyLnCDsgrzrj4Qy64-ZIOykkeyVmeuhnDE06ri4IDIx!5e0!3m2!1sko!2skr!4v1609811656681!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="info wrap"><!-- 푸터 인포 -->
+                <div class="footInfo">
+                    <h3>INFORMATION</h3>
+                    <p>상호명: <strong>리블리뷰</strong></p>
+                    <p>대표자명: 정 학</p>
+                    <p>주소: 제주특별자치도 제주시 중앙로 14길 21 108호</p>
+                    <p>대표전화: <a href="tel:010-8389-8475">010-8389-8475</a></p>
+                </div>
+                <div class="footInfo">
+                    <h3>WEB DESIGNER</h3>
+                    <p>디자인 및 퍼블리싱: 김승범</p>
+                    <p>E-mail: <a href="mailto:wlgkr784@naver.com">wlgkr784@naver.com</a></p>
+                </div>
+                <div class="footInfo">
+                    <h3>BANK INFO</h3>
+                    <p>은행명: <strong>농협</strong></p>
+                    <p>계좌번호: 356-1023-4771-83</p>
+                </div>
+            </div>
+            <div class="fnb"><!-- 푸터네비게이션 -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 취급방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">이용문의</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+            </div>
+            <div class="copyright">모든 컨텐츠의 무단복제 및 재판매를 금지합니다. Copyright &copyright; 2021 By (주)리블리뷰 ALL Right Reserved. Designed by 김승범</div>
+        </footer>
+    </div>
+    <script src="../common/common.js"></script>
+</body>

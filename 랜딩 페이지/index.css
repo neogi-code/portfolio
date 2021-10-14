@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+img {
+    width: 90%;
+    display: block;
+    margin: 80px auto 0;
+}
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.wrap {
+    width: 1050px;
+    margin: 0 auto;
+}
+.main {
+    width: 100%;
+    margin: 0;
+}
+.imgWrap {
+    position: relative;
+}
+.imgWrap .position {
+    width: 35%;
+    position: absolute;
+    top: -22%; left: 5%;
+}
+.bgc {
+    min-width: 1050px;
+}
+.bgc:nth-of-type(1){
+    background-color: #b1ebcc;
+}
+.bgc:nth-of-type(1) .wrap > img:last-of-type {
+    padding-bottom: 100px;
+}
+.bgc:nth-of-type(2){
+    background-color: #b0ddf5;
+}
+.bgc:nth-of-type(2) .wrap > img {
+    margin: 100px auto;
+}
+.bgc:nth-of-type(2) .wrap > img:first-child {
+    padding-top: 100px;
+    margin-top: 0;
+}
+.wrap:last-of-type {
+    padding-bottom: 100px;
+}
+.apply {
+    padding-bottom: 100px;
+    position: relative;
+}
+.apply .grid {
+    position: absolute;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    top: 120px; left: 50%;
+    transform: translateX(-50%);
+    column-gap: 35px;
+}
+.apply .btn {
+    cursor: pointer;
+}
+.apply .grid img {
+    width: 100%;
+    margin: 0;
+    display: inline;
+}
+.wrap > .grid {
+    width: 92%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px 17px;
+}
+.tableWrap {
+    background-color: #3790d2;
+    text-align: center;
+    color: #fff;
+}
+.content {
+    background-color: #fff;
+    color: #000;
+}
+.content img {
+    margin: 0;
+    display: inline-block;
+    width: 25%;
+}
+.tableWrap .txt > p,
+.tableWrap .txt > h3 {
+    width: 90%;
+    margin: 0 auto;
+}
+.tableWrap .txt > h3 {
+    font-size: 18px;
+    margin-top: 13px;
+    padding: 9px;
+}
+.tableWrap .txt > p {
+    font-size: 14px;
+    padding: 7px;
+}
+.tableWrap .txt p:first-of-type {
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.tableWrap .txt p:last-of-type {
+    margin-bottom: 13px;
+}
+.tableWrap table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.tableWrap table th {
+    background-color: #555555;
+    color: #fff;
+}
+.tableWrap table td {
+    border: 1px solid #a6a6a6;
+}
+.tableWrap table:first-of-type th,
+.tableWrap table:first-of-type td{
+    width: 33%;
+    padding: 8px;
+}
+.tableWrap table tr:first-of-type {
+    transform: translateX(.2%);
+}
+.now {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 15px;
+    background-color: #ececec;
+    text-indent: 15px;
+    align-items: center;
+}
+.content {
+    padding-top: 15px;
+}
+.tableWrap table:last-of-type {
+    margin: 15px auto;
+}
+.tableWrap table:last-of-type th {
+    background-color: #72a4b5;
+}
+.tableWrap table:last-of-type th,
+.tableWrap table:last-of-type td {
+    padding: 10px 4px;
+}
+.content{}
+.content button {
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    outline: unset;
+    border: 1px solid #005bc0;
+    background-color: #3790d2;
+    color: #fff;
+    cursor: pointer;
+}
+.check {
+    width: 600px;
+    height: 533px;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    top: 10%; left: 50%;
+    transform: translate(-50%);
+    display: none;
+}
+.check .wrap {
+    padding: 0;
+}
+.check h2 {
+    text-align: center;
+}
+.check .formWrap:first-of-type {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.check .wrap{
+    width: 520px;
+    margin: 0 auto;
+}
+.check .formWrap {
+    padding: 20px 0;
+}
+.check label {
+    width: 70px;
+    display: inline-block;
+    text-align: justify;
+}
+.check .bg {
+    padding: 17px 10px;
+    background-color: #dbdbdb;
+    text-align: center;
+    margin-top: 20px;
+}
+.check table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #000;
+}
+.check tr > * {
+    padding: 10px 10px;
+}
+.check tr:first-of-type {
+    background-color: #70a3b4;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.check td {
+    border: 1px solid #000;
+}
+.check .cancel {
+    width: 198px;
+    height: 50px;
+    background-color: #4184c2;
+    color: #fff;
+    border: unset;
+    outline: unset;
+    font-size: 18px;
+    margin: 30px auto;
+    transform: translateX(70%);
+}
+.check > span:first-of-type,
+.applyArea > span:first-of-type{
+    position: absolute;
+    top: 20px; right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.applyArea {
+    width: 600px;
+    height: 794px;
+    border: 1px;
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    top: 10%; left: 50%;
+    transform: translate(-50%);
+    display: none;
+}
+input {
+    background-color: #f0f4f5;
+    outline: unset;
+    border: unset;
+    padding: 10px 0;
+    text-indent: 10px;
+}
+.cSub,.tSub {
+    width: 92px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background-color: #000;
+    color: #fff;
+    outline: unset;
+    border: unset;
+    border-radius: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.applyArea h2 {
+    text-align: center;
+}
+.applyArea .wrap {
+    width: 85%;
+}
+.applyArea label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 24px;
+}
+.applyArea .formWrap {
+    padding: 22px 0;
+    border-top: 1px solid #dbdbdb;
+}
+.txtWrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 168px;
+}
+.txtWrap span {
+    font-size: 13px;
+    margin-top: 5px;
+}
+select {
+    width: 168px;
+    padding: 15px 0;
+    border: unset;
+    outline: unset;
+    background-color: #f0f4f5;
+}
+.applyArea img {
+    margin-top: 25px;
+}
+.applyArea .aSub {
+    width: 198px;
+    height: 50px;
+    background-color: #4184c2;
+    color: #fff;
+    border: unset;
+    outline: unset;
+    font-size: 18px;
+    margin: 30px auto;
+    transform: translateX(70%);
+}
+button {
+    cursor: pointer;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .grid {
+        display: block;
+    }
+     .grid .btn {
+         width: 30%;
+         display: inline-block;
+         margin: 0 1.5%;
+     }
+     .tableWrap {
+         width: 31%;
+         display: inline-block;
+         margin: 1% 1%;
+     }
+}

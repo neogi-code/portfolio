@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* 공통 */
+
+header {
+    background-color: transparent;
+    color: #fff;
+}
+header h1 {
+    background-image: url(../common/images/logo.png);
+}
+header.fixed {
+    background-color: rgba(255, 255, 255, .8);
+    color: #000;
+}
+header.fixed h1 {
+    background-image: url(../common/images/logo_black.png);
+}
+
+/* 헤드섹션 */
+.headSection {
+    padding: 150px 0 30px;
+    text-align: left;
+    color: #fff;
+    background: url(images/bg_skin.jpg);
+    background-size: cover;
+}
+.headSection .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.headSection > div span {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 5px 0;
+}
+.headSection .wrapper {
+    width: 896px;
+    margin: 0 auto;
+}
+
+/* section nav */
+
+section nav {
+    margin-top: 40px;
+    /* height: 80px; */
+}
+section nav > div{
+    height: 50%;
+}
+section nav .top {
+    border-bottom: 1px solid rgb(220,220,220);
+}
+section nav .bottom li {
+    color: #777;
+    margin: 20px 20px 0 0;
+}
+section nav .bottom li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+}
+section nav ul {
+    display: flex;
+}
+section nav .lnb > li {
+    padding: 15px 0;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+section nav .lnb .focus {
+    font-weight: 700;
+    border-bottom: 2px solid  rgba(220, 20, 60);
+}
+
+
+/* 스킨 리스트 */
+section .wrapper {
+    width: 896px;
+    min-width: 896px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.skin > li {
+    padding: 80px 0;
+}
+.skin > li:nth-of-type(even) {
+    background-color: #f5f5f5;
+}
+.skin .skinList {
+    display: flex;
+    margin-top: 20px;
+}
+.skin .skinList > li {
+    width: 436px;
+    height: 327px;
+    transition: .4s;
+}
+.skin .skinList li:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+.skin .wrapper {
+    text-align: left;
+    position: relative;
+}
+.skin .wrapper h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.skin .wrapper p {
+    color: #777;
+    padding: 17px 0;
+}
+.skin .wrapper .hashTag {
+    display: flex;
+    font-size: 14px;
+}
+.skin .wrapper .hashTag li {
+    margin-right: 12px;
+    color: #777;
+    cursor: pointer;
+}
+.skin .wrapper .hashTag li:hover {
+    text-decoration: underline;
+    color: #000;
+}
+.skin .wrappper .swiper-wrapper {
+    width: 100vw;
+}
+
+/* swiper arrow controll */
+
+.arrow {
+    background-color: rgba(0, 0, 0, .5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: .3s;
+    top: 50%;
+}
+.swiper-button-next {
+    margin-right: -200px;
+}
+.swiper-button-prev {
+    margin-left: -100px;
+}
+.arrow:after {
+    margin: 0;
+    font-size: 22px;
+}
+.arrow:hover {
+    background-color: rgba(0,0,0);
+}

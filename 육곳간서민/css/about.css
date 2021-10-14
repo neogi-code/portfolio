@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+header .ab {
+    color: #d71921;
+}
+.one {
+    background-image: url(../images/about1.png);
+    justify-content: center;
+    align-items: center;
+    background-position: 0 80%;
+}
+.two {
+    background-image: url(../images/about2.png);
+    background-position: 0 70%;
+}
+.three {
+    background-image: url(../images/about3.png);
+    background-position: 0 80%;
+    align-items: flex-end;
+    text-align: right;
+}
+.four {
+    background-image: url(../images/about4.png);
+    background-position: -60%;
+}
+section {
+    color: #fff;
+    background-attachment: fixed;
+}
+section  * {
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: 1.2s .4s;
+}
+section h2 {
+    font-size: 12rem;
+    margin: 2.8rem 0 6rem;
+    transition-delay: .8s;
+    font-family: "century gothic";
+}
+h3 {
+    font-size: 8rem;
+    font-weight: normal;
+    margin-left: 500px;
+}
+p {
+    font-size: 3.4rem;
+        font-family: 'NEXON Lv1 Gothic OTF Light';
+    line-height: 1.5;
+    transition-delay: 1.2s;
+}
+section .title {
+    font-size: 4rem;
+    font-weight: bold;
+    display: block;
+    width: auto;
+    margin-top: 24rem;
+    align-self: start;
+    padding: .5rem 0;
+    transition-delay: .4s;
+    font-family: "century gothic";
+}
+.three .title {
+    align-self: flex-end;
+}
+section.focus  *,
+section:last-of-type  * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 500px) {
+    section {
+    background-attachment: initial;
+    }
+    .one {
+        background-image: url(/images/about1_m.jpg);
+    }
+    .one h3 {
+        margin-left: 2rem;
+        margin-top: 55vw;
+        font-size: 4rem;
+    }
+    .two {
+        background-image: url(/images/about2_m.jpg);
+    }
+    .three {
+        background-image: url(/images/about3_m.jpg);
+    }
+    .four {
+        background-image: url(/images/about4_m.jpg);
+    }
+    section h2 {
+        font-size: 8rem;
+        margin-top: 3rem;
+        line-height: 1.1;
+    }
+    section .title {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 2.4rem;
+    }
+}
